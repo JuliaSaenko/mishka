@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Саенко](https://up.htmlacademy.ru/adaptive/15/user/517999).
-* Наставник: Сергей Кравченко.(https://htmlacademy.ru/profile/id13921)
+* Наставник: [Сергей Кравченко](https://htmlacademy.ru/profile/id13921).
 
 ---
 
