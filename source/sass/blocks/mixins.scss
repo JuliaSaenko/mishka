@@ -1,0 +1,18 @@
+@mixin simple-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin simple-link {
+  text-decoration: none;
+}
+
+@mixin container {
+  padding: 0 30px;
+}
+
+@mixin no-indent {
+  margin: 0;
+  padding: 0;
+}

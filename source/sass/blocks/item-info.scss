@@ -1,0 +1,19 @@
+.item-info__text {
+  @include no-indent;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $dark-gray;
+  margin-bottom: 15px;
+}
+
+.item-info__options {
+  margin-bottom: 28px;
+}
+
+.item-info__label,
+.item-info__value {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid $light-gray;
+}

@@ -1,0 +1,30 @@
+.weekly-goods__container {
+  @include container;
+  padding-top: 28px;
+}
+
+.weekly-goods__header {
+  padding-bottom: 25px;
+}
+
+.weekly-goods__title {
+  @include no-indent;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+}
+
+.weekly-goods__label {
+  font-weight: 700;
+  color: $mint;
+  text-transform: uppercase;
+}
+
+.weekly-goods__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $dark-gray;
+  padding: 25px 0;
+}

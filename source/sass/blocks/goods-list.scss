@@ -1,0 +1,26 @@
+.goods-list {
+  @include simple-list;
+}
+
+.goods-list__item {
+  @include container;
+}
+
+.goods-list__item--interior {
+  background-color: $mint;
+}
+
+.goods-list__item--toys {
+  background-color: $dark-mint;
+}
+
+.goods-list__link {
+  @include simple-link;
+  display: block;
+  color: $white;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
