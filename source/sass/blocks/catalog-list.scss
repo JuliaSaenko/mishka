@@ -1,0 +1,9 @@
+.catalog-list {
+  @include simple-list;
+  @include container;
+  padding-top: 30px;
+}
+
+.catalog-list__item {
+  margin-bottom: 30px;
+}

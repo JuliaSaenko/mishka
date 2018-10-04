@@ -1,0 +1,35 @@
+.goods-list {
+  @include simple-list;
+}
+
+.goods-list__item {
+  @include container;
+
+  &:hover {
+    transition: 0.5s;
+    margin-top: -5px;
+  }
+}
+
+.goods-list__item--interior {
+  background-color: $mint;
+}
+
+.goods-list__item--toys {
+  background-color: $mint--darker;
+}
+
+.goods-list__link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 19px;
+  line-height: 1.26;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+
+  &:active .goods-list__text {
+    opacity: 0.3;
+  }
+}

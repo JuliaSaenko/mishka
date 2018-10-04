@@ -1,0 +1,39 @@
+body {
+  /*@include font-set;*/
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "OpenSans", sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+  color: $gray--darker;
+  background-color: $white;
+}
+
+.page-description {
+  @include no-indent;
+  @include container;
+  display: block;
+  margin: 25px 0;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

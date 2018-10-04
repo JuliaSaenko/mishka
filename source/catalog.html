@@ -4,14 +4,15 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет магазин Mishka</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
       <div class="page-header__top">
         <nav class="main-nav">
-          <a class="page-header__logo" href="index-mishka.html">
-            <img class="page-header__logo-image" width="" height="" alt="Логотип интернет магазина Mishka">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Mishka">
           </a>
           <ul class="main-nav__list site-navigation">
             <li class="site-navigation__item site-navigation__item--current"><a class="site-navigation__link">Каталог товаров</a></li>
@@ -23,7 +24,7 @@
         </nav>
       </div>
       <div class="page-header__intro">
-        <h1 class="page-header__title">Вязание на заказ</h1>
+        <h1 class="page-header__title">Каталог товаров</h1>
       </div>
     </header>
 
@@ -32,13 +33,13 @@
         <ul class="catalog__list catalog-list">
           <li class="catalog-list__item">
             <article class="catalog-list__product catalog-product">
-              <a class="catalog-product__link" href="#">
-                <img class="catalog-product__image" src="" width="" height="" alt="Зайчик-попрыгайчик">
+              <a class="catalog-product__title-link" href="#">
+                <img class="catalog-product__image" src="../img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
               </a>
               <div class="catalog-product__info">
                 <header class="catalog-product__header">
-                  <h3 class="catalog-product__title"><a class="product__link">Зайчик-попрыгайчик</a></h3>
-                  <p class="catalog-product__info">Рост 30 см, вес 200 г</p>
+                  <h3 class="catalog-product__title"><a class="catalog-product__link" href="#">Зайчик-попрыгайчик</a></h3>
+                  <p class="catalog-product__description">Рост 30 см, вес 200 г</p>
                 </header>
                 <footer class="catalog-product__footer">
                   <span class="catalog-product__price">1 200 руб.</span>
@@ -49,13 +50,13 @@
           </li>
           <li class="catalog-list__item">
             <article class="catalog-list__product catalog-product">
-              <a class="catalog-product__link" href="#">
-                <img class="catalog-product__image" src="" width="" height="" alt="Корзинка для белья">
+              <a class="catalog-product__title-link" href="#">
+                <img class="catalog-product__image" src="../img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
               </a>
               <div class="catalog-product__info">
                 <header class="catalog-product__header">
-                  <h3 class="catalog-product__title"><a class="product__link" href=""><Корзинка для белья</a></h3>
-                  <p class="catalog-product__info">Диаметр 15 см, высота 10 см</p>
+                  <h3 class="catalog-product__title"><a class="catalog-product__link" href="">Корзинка для белья</a></h3>
+                  <p class="catalog-product__description">Диаметр 15 см, высота 10 см</p>
                 </header>
                 <footer class="catalog-product__footer">
                   <span class="catalog-product__price">690 руб.</span>
@@ -66,13 +67,13 @@
           </li>
           <li class="catalog-list__item">
             <article class="catalog-list__product catalog-product">
-              <a class="catalog-product__link" href="#">
-                <img class="catalog-product__image" src="" width="" height="" alt="Большая корзинка дл игрушек">
+              <a class="catalog-product__title-link" href="#">
+                <img class="catalog-product__image" src="../img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка дл игрушек">
               </a>
               <div class="catalog-product__info">
                 <header class="catalog-product__header">
-                  <h3 class="catalog-product__title"><a class="product__link" href="#">Большая корзинка для игрушек</a></h3>
-                  <p class="catalog-product__info">Диаметр 30 см, высота 30 см</p>
+                  <h3 class="catalog-product__title"><a class="catalog-product__link" href="#">Большая корзинка для игрушек</a></h3>
+                  <p class="catalog-product__description">Диаметр 30 см, высота 30 см</p>
                 </header>
                 <footer class="catalog-product__footer">
                   <span class="catalog-product__price">1 500 руб.</span>
@@ -85,14 +86,16 @@
       </section>
 
       <section class="production-process">
-        <h2 class="production-process__title">Процесс производства</h2>
-        <div class="production-process__player">
-          <img class="production-process__video" src="" width="" height="" alt="Видео производства товаров">
-          <button class="production-process__play-button" type="button">
-        </div>
-        <div class="production-process__info">
-          <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="production-process__button button" href="#">Сделать заказ</a>
+        <div class="production-process__container">
+          <h2 class="production-process__title">Процесс производства</h2>
+          <div class="production-process__player">
+            <img class="production-process__video" src="../img/video-mobile@1x.jpg" width="260" height="150" alt="Видео производства товаров">
+            <button class="production-process__play-button visually-hidden" type="button">
+          </div>
+          <div class="production-process__info">
+            <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="production-process__button button button--small" href="#">Сделать заказ</a>
+          </div>
         </div>
       </section>
     </main>
@@ -128,7 +131,7 @@
             <input class="choose-size__label-radio visually-hidden" type="radio" name="size" value="size-L" id="l-size">
           </li>
         </ul>
-        <button class="choose-size__button button" type="submit">Добавить</button>
+        <button class="choose-size__button button button--mint" type="submit">Добавить</button>
       </form>
     </section>
   </body>
