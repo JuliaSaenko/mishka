@@ -1,0 +1,43 @@
+.reviews__container {
+  @include container;
+  padding-bottom: 45px;
+}
+
+.reviews__title {
+  margin-bottom: 28px;
+}
+
+.rewiews__item {
+  @include no-indent;
+}
+
+.reviews__text {
+  @include no-indent;
+}
+
+.rewiews__author {
+  display: block;
+  margin-top: 56px;
+}
+
+.rewiews__author-name {
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 700;
+  /*font-style: normal;*/
+  color: $black;
+}
+
+.rewiews__hashtag {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 1.8;
+  font-style: normal;
+}
+
+.reviews__button {
+  display: block;
+  margin-top: 39px;
+}

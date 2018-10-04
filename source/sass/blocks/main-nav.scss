@@ -1,7 +1,7 @@
 .main-nav__logo {
-  border-bottom: 1px solid $light-gray;
   display: block;
-  text-align: center;
   padding-top: 22px;
   padding-bottom: 22px;
+  text-align: center;
+  border-bottom: $border;
 }

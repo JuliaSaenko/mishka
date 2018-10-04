@@ -4,10 +4,6 @@
   list-style: none;
 }
 
-@mixin simple-link {
-  text-decoration: none;
-}
-
 @mixin container {
   padding: 0 30px;
 }
@@ -16,3 +12,10 @@
   margin: 0;
   padding: 0;
 }
+
+/*@mixin font-set($font-base, $lineh-base, $fontw-base, $black) {
+  font-size: $font-base;
+  line-height: $lineh-base;
+  font-weight: $fontw-base;
+  color: $black;
+}*/

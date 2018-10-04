@@ -1,0 +1,10 @@
+.social-buttons {
+  @include simple-list;
+  padding-right: 49px;
+  padding-left: 57px;
+  border-bottom: $border;
+}
+
+.social-buttons__item {
+  margin-bottom: 29px;
+}

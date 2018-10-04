@@ -4,6 +4,11 @@
 
 .goods-list__item {
   @include container;
+
+  &:hover {
+    transition: 0.5s;
+    margin-top: -5px;
+  }
 }
 
 .goods-list__item--interior {
@@ -11,16 +16,20 @@
 }
 
 .goods-list__item--toys {
-  background-color: $dark-mint;
+  background-color: $mint--darker;
 }
 
 .goods-list__link {
-  @include simple-link;
   display: block;
-  color: $white;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
   padding-top: 25px;
   padding-bottom: 25px;
+  font-size: 19px;
+  line-height: 1.26;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+
+  &:active .goods-list__text {
+    opacity: 0.3;
+  }
 }

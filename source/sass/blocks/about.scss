@@ -1,0 +1,22 @@
+.about__container {
+  @include container;
+  padding-top: 27px;
+  padding-bottom: 50px;
+}
+
+.about-title {
+  margin-bottom: 25px;
+}
+
+.about__list {
+  @include simple-list;
+}
+
+.about__item {
+  padding-top: 50px;
+  padding-bottom: 27px;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $black;
+}

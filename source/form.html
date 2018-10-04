@@ -4,14 +4,15 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет магазин Mishka</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
       <div class="page-header__top">
         <nav class="main-nav">
-          <a class="page-header__logo" href="index-mishka.html">
-            <img class="page-header__logo-image" width="" height="" alt="Логотип интернет магазина Mishka">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Mishka">
           </a>
           <ul class="main-nav__list site-navigation">
             <li class="site-navigation__item"><a class="site-navigation__link" href="catalog.html">Каталог товаров</a></li>
@@ -23,7 +24,7 @@
         </nav>
       </div>
       <div class="page-header__intro">
-        <h1 class="page-header__title">Вязание на заказ</h1>
+        <h1 class="page-header__title page-header__title--brown">Вязание на заказ</h1>
       </div>
     </header>
 
@@ -80,17 +81,17 @@
           <div class="order-form__wrapper">
             <legend class="order-form__title">Фио</legend>
             <ul class="order-form__options">
-              <li class="contest-form__option">
+              <li class="order-form__option order-form__option--text">
+                <label  class="order-form__label order-form__label--text" for="first-name">Имя:</label>
                 <input  class="order-form__text" type="text" name="first-name" value="" placeholder="Введите ваше имя*" id="first-name">
-                <label  class="order-form__label" for="first-name">Имя:</label>
               </li>
-              <li class="order-form__option">
-                <input  class="order-form-form__text" type="text" name="last-name" value="" placeholder="Укажите фамилию*" id="last-name">
-                <label class="order-form__label" for="last-name">Фамилия:</label>
+              <li class="order-form__option order-form__option--text">
+                <label class="order-form__label order-form__label--text" for="last-name">Фамилия:</label>
+                <input  class="order-form__text" type="text" name="last-name" value="" placeholder="Укажите фамилию*" id="last-name">
               </li>
-              <li class="order-form__option">
+              <li class="order-form__option order-form__option--text">
+                <label class="order-form__label order-form__label--text" for="middle-name">Отчество:</label>
                 <input  class="order-form__text" type="text" name="middle-name" value="" placeholder="Отчество, если желаете" id="middle-name">
-                <label class="order-form__label" for="middle-name">Отчество:</label>
               </li>
             </ul>
           </div>
@@ -108,14 +109,14 @@
           <div class="order-form__wrapper">
             <legend class="order-form__title">E-mail</legend>
             <p class="order-form__options">
-              <input  class="contest-form__text" type="email" name="email" value="" placeholder="Ваш Email*" id="email">
+              <input  class="order-form__text" type="email" name="email" value="" placeholder="Ваш Email*" id="email">
               <label class="visually-hidden" for="email">Ваш Email*</label>
             </p>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__wrapper">
-            <label class="order-form__label" for="additional-info">Доп</label>
+            <label class="order-form__title" for="additional-info">Доп</label>
             <textarea class="order-form__textarea" form="order-form-form" name="additional-info" rows="7" placeholder="Опишите все ваши пожелания к заказу" id="additional-info"></textarea>
           </div>
         </fieldset>

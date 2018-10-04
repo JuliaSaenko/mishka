@@ -1,0 +1,46 @@
+.contacts__container {
+  @include container;
+  padding-top: 39px;
+}
+
+.contacts__title {
+  @include no-indent;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 700;
+  color: $black;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: $gray--darker;
+  border-bottom: 1px solid $mint;
+
+  &:hover,
+  &:focus {
+    color: $mint;
+  }
+
+  &:active {
+    color: rgba($mint, 0.3);
+    border-bottom: 1px solid rgba($mint, 0.3);
+  }
+}
+
+.contacts__map {
+  margin-top: 40px;
+  width: 100%;
+  min-height: 457px;
+}
+
+.contacts__iframe {
+  display: block;
+  margin: 0;
+  width: 100%;
+  min-height: 457px;
+  border: none;
+}
+
+.contacts__button {
+  margin: 39px 0;
+}

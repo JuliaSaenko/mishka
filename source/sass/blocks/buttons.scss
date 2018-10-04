@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  padding: 12px 39px;
+  width: 100%;
+  font-size: 17px;
+  line-height: 0.94;
+  font-weight: 700;
+  color: $gray--darker;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $white;
+  border: $button-border;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $gray--darker;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.button--small {
+  padding: 12px 24px;
+  width: 188px;
+}
+
+.button--mint {
+  color: $white;
+  background-color: $mint;
+  border: $button-border--mint;
+}
