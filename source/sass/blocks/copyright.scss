@@ -1,5 +1,11 @@
 .copyright {
   @include container;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 23px;
 }
 
 .copyright__by {
@@ -7,4 +13,23 @@
   line-height: 0.95;
   font-weight: 700;
   color: $black;
+}
+
+.copyright__logo {
+  fill: $mint;
+  width: 27px;
+  height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 182px;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .copyright__by,
+  .copyright__cite {
+    padding-left: 30px;
+  }
 }

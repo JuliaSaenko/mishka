@@ -1,4 +1,5 @@
 .modal {
+  display: none;
   @include container;
   padding-top: 30px;
   min-height: 337px;

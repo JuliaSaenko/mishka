@@ -87,6 +87,7 @@
 }
 
 .order-form__textarea {
+  box-sizing: border-box;
   padding: 16px;
   min-width: 258px;
   font-size: 17px;
@@ -114,4 +115,51 @@
   font-size: 14px;
   line-height: 1.14;
   color: $gray--darker;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    padding: 0;
+    width: 768px;
+  }
+
+  .order-form__fieldset {
+    margin: 0;
+    padding: 50px 0;
+
+    &--gray {
+      background-color: $gray;
+    }
+
+    &--first {
+      padding: 0;
+    }
+  }
+
+  .order-form__wrapper {
+    @include tablet-container;
+    display: flex;
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
+  .order-form__title {
+    position: static;
+    padding-top: 15px;
+    width: 167px;
+    text-align: left;
+  }
+
+  .order-form__options {
+    width: 501px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .order-form__text {
+    background-color: transparent;
+    width: 100%;
+  }
 }

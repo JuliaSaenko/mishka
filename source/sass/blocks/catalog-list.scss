@@ -7,3 +7,32 @@
 .catalog-list__item {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    @include tablet-container;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+  }
+
+  .catalog-list__item {
+    width: 668px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    @include desktop-container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 132px;
+  }
+
+  .catalog-list__item {
+    width: 315px;
+  }
+}

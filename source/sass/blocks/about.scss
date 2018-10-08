@@ -6,6 +6,7 @@
 
 .about-title {
   margin-bottom: 25px;
+  color: $black;
 }
 
 .about__list {
@@ -19,4 +20,48 @@
   line-height: 1.2;
   font-weight: 700;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .about__container {
+    @include tablet-container;
+    padding-top: 55px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .about-title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .about__item {
+    width: 50%;
+    padding-bottom: 55px;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    @include desktop-container;
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+
+  .about__list {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .about-title {
+    margin-left: 175px;
+  }
 }

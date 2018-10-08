@@ -8,6 +8,14 @@
   padding: 0 30px;
 }
 
+@mixin tablet-container {
+  padding: 0 50px;
+}
+
+@mixin desktop-container {
+  padding: 0 100px;
+}
+
 @mixin no-indent {
   margin: 0;
   padding: 0;
