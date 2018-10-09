@@ -31,6 +31,10 @@
   text-align: center;
 }
 
+.weekly-goods__image {
+  text-align: center;
+}
+
 .weekly-goods__button {
   margin-bottom: 36px;
   text-decoration: none;
@@ -48,7 +52,6 @@
 
   .weekly-goods__header {
     display: flex;
-    flex-direction: row;
     flex-grow: 1;
     justify-content: space-between;
   }
@@ -67,18 +70,16 @@
   }
 
   .weekly-goods__info {
-    box-sizing: border-box;
     align-self: flex-start;
     padding-right: 43px;
     width: 50%;
   }
 
   .weekly-goods__price-info {
-    box-sizing: border-box;
     align-self: flex-start;
     margin-top: -175px;
-    width: 50%;
     padding-right: 43px;
+    width: 50%;
   }
 
   .weekly-goods__price {
@@ -95,6 +96,7 @@
 @media (min-width: $desktop-width) {
   .weekly-goods__container {
     @include desktop-container;
+    position: relative;
     flex-direction: column;
     padding-top: 71px;
   }
@@ -104,12 +106,13 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 55px;
+    z-index: 1;
   }
 
   .weekly-goods__title {
-    z-index: 1;
     font-size: 53px;
     line-height: 57px;
+    z-index: 1;
   }
 
   .weekly-goods__label {
@@ -123,9 +126,9 @@
   }
 
   .weekly-goods__image {
-    margin-top: -60%;
-    margin-left: 50%;
-    order: 1;
+    position: absolute;
+    top: 71px;
+    right: 100px;
   }
 
   .weekly-goods__price-info {

@@ -42,10 +42,10 @@
 .order-form__option {
   margin-bottom: 21px;
   padding-left: 62px;
-}
 
-.order-form__option--text {
-  padding: 0;
+  &--text {
+    padding: 0;
+  }
 }
 
 .order-form__label-radio,
@@ -120,12 +120,12 @@
 @media (min-width: $tablet-width) {
   .order-form {
     padding: 0;
-    width: 768px;
   }
 
   .order-form__fieldset {
     margin: 0;
     padding: 50px 0;
+    width: auto;
 
     &--gray {
       background-color: $gray;
@@ -138,7 +138,7 @@
 
   .order-form__wrapper {
     @include tablet-container;
-    display: flex;
+    /*display: flex;*/
     padding-top: 65px;
     padding-bottom: 50px;
   }
@@ -151,15 +151,22 @@
   }
 
   .order-form__options {
-    width: 501px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 501px;
   }
 
   .order-form__text {
-    background-color: transparent;
     width: 100%;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__wrapper {
+    @include desktop-container;
+    padding-top: 65px;
+    padding-bottom: 50px;
   }
 }

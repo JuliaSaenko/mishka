@@ -17,8 +17,8 @@
   }
 
   .catalog-list__item {
-    width: 668px;
     margin-bottom: 58px;
+    width: 668px;
   }
 }
 
@@ -26,7 +26,6 @@
   .catalog-list {
     @include desktop-container;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 132px;

@@ -56,7 +56,6 @@
 .reviews__control-button {
   width: 50%;
   height: 53px;
-  box-sizing: border-box;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -99,15 +98,15 @@
   }
 
   .reviews__title {
+    order: -2;
     font-size: 43px;
     line-height: 1.16;
-    order: -2;
   }
 
   .reviews__button {
-    width: 180px;
     order: -1;
     margin-left: auto;
+    width: 180px;
   }
 
   .reviews__text {
@@ -131,8 +130,8 @@
 @media (min-width: $desktop-width) {
   .reviews__container {
     @include desktop-container;
-    padding-top: 75px;
     margin-bottom: 68px;
+    padding-top: 75px;
   }
 
   .reviews__title {

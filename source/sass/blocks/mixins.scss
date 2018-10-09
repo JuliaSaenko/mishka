@@ -9,11 +9,15 @@
 }
 
 @mixin tablet-container {
+  margin: 0 auto;
   padding: 0 50px;
+  width: 768px;
 }
 
 @mixin desktop-container {
+  margin: 0 auto;
   padding: 0 100px;
+  width: 1250px;
 }
 
 @mixin no-indent {

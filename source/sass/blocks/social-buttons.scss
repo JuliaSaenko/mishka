@@ -1,11 +1,13 @@
 .social-buttons {
   @include simple-list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 142px;
+  margin: 0 auto;
   padding-right: 49px;
   padding-left: 57px;
+  width: 260px;
   border-bottom: $footer-border;
 }
 
@@ -15,7 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .social-buttons {
-    border: none;
     padding-top: 23px;
+    border: none;
   }
 }

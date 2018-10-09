@@ -30,10 +30,9 @@
 
   .about__list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     padding-bottom: 20px;
+    width: 100%;
   }
 
   .about-title {
@@ -42,8 +41,8 @@
   }
 
   .about__item {
-    width: 50%;
     padding-bottom: 55px;
+    width: 50%;
     font-size: 20px;
     line-height: 1.1;
   }
@@ -57,8 +56,8 @@
   }
 
   .about__list {
-    max-width: 700px;
     margin: 0 auto;
+    max-width: 700px;
   }
 
   .about-title {

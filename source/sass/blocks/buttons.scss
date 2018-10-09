@@ -23,18 +23,19 @@
   &:active {
     color: rgba($white, 0.3);
   }
+
+  &--small {
+    padding: 12px 16px;
+    width: 188px;
+  }
+
+  &--mint {
+    color: $white;
+    background-color: $mint;
+    border: $button-border--mint;
+  }
 }
 
-.button--small {
-  padding: 12px 16px;
-  width: 188px;
-}
-
-.button--mint {
-  color: $white;
-  background-color: $mint;
-  border: $button-border--mint;
-}
 
 @media (min-width: $tablet-width) {
   line-height: 1.18;

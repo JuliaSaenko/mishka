@@ -7,6 +7,7 @@
 
 .catalog-product__info {
   @include container;
+  width: 260px;
   border: $catalog-itemborder;
 
   &:hover,
@@ -113,9 +114,9 @@
   }
 
   .catalog-product__info {
+    padding: 0 28px;
     width: 315px;
     min-height: 195px;
-    padding: 0 28px;
     border: none;
   }
 

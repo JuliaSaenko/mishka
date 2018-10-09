@@ -8,8 +8,8 @@
 }
 
 .item-info__options {
-  width: 100%;
   margin-bottom: 28px;
+  width: 100%;
 }
 
 .item-info__label,
@@ -21,11 +21,6 @@
 
 
 @media (min-width: $tablet-width) {
-  .item-info {
-    display: flex;
-    flex-direction: column;
-  }
-
   .item-info__text {
     font-size: 17px;
     line-height: 1.76;

@@ -74,16 +74,15 @@
 @media (min-width: $desktop-width) {
   .contacts__container {
     @include desktop-container;
-    padding-left: 175px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    padding-left: 175px;
   }
 
   .contacts__data {
-    flex-direction: column;
     justify-content: flex-start;
     margin: 0;
+    padding-right: 50%;
   }
 
   .contacts__row {
@@ -92,6 +91,7 @@
   }
 
   .contacts__title {
+    padding-right: 50%;
     font-size: 53px;
     line-height: 1.08;
   }
@@ -105,10 +105,10 @@
   }
 
   .contacts__map {
-    width: 50%;
-    height: 457px;
     margin-top: -25%;
     margin-left: 42%;
+    width: 50%;
+    height: 457px;
   }
 
   .contacts__button {
