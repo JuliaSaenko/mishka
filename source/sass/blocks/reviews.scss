@@ -48,7 +48,6 @@
 }
 
 .rewiews__controls {
-  height: 53px;
   width: 100%;
   margin-bottom: 38px;
 }
@@ -90,14 +89,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin: 0;
     padding-top: 80px;
     padding-bottom: 115px;
     background-image: url("../img/review@1x.jpg");
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 350px 458px;
   }
 
   .reviews__title {
+    margin-top: 0;
     order: -2;
     font-size: 43px;
     line-height: 1.16;

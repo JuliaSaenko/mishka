@@ -14,8 +14,8 @@
 }
 
 .order-form__title {
-  position: relative;
-  display: block;
+  @include no-indent;
+  display: flex;
   padding-bottom: 24px;
   font-size: 17px;
   line-height: 0.94;
@@ -24,11 +24,10 @@
   text-transform: uppercase;
 
   &::after {
-    position: absolute;
     content: "";
-    top: 12px;
-    right: 0;
-    display: block;
+    flex-grow: 1;
+    align-self: center;
+    margin-left: 27px;
     width: 198px;
     height: 1px;
     background-color: $mint;
@@ -124,28 +123,40 @@
 
   .order-form__fieldset {
     margin: 0;
-    padding: 50px 0;
+    padding-top: 65px;
+    padding-bottom: 50px;
     width: auto;
 
-    &--gray {
+    &--tel,
+    &--email,
+    &--color {
       background-color: $gray;
     }
 
-    &--first {
+    &--type,
+    &--tel,
+    &--email {
       padding: 0;
+    }
+
+    &--tel {
+      padding-top: 65px;
+    }
+
+    &--email {
+      padding-bottom: 50px;
     }
   }
 
+
   .order-form__wrapper {
     @include tablet-container;
-    /*display: flex;*/
-    padding-top: 65px;
-    padding-bottom: 50px;
+    display: flex;
   }
 
   .order-form__title {
-    position: static;
-    padding-top: 15px;
+    display: block;
+    padding-top: 10px;
     width: 167px;
     text-align: left;
   }
@@ -153,20 +164,76 @@
   .order-form__options {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 501px;
   }
 
+  .order-form__option {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &--text {
+      margin-top: 0;
+    }
+  }
+
+  .order-form__options--color .order-form__option {
+    width: 50%;
+  }
+
+  .order-form__label--text {
+    margin: 0;
+    margin-right: 20px;
+  }
+
   .order-form__text {
+    display: flex;
     width: 100%;
     background-color: transparent;
+  }
+
+  .order-form__textarea {
+    width: 501px;
+  }
+
+  .order-form__footer {
+    @include tablet-container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .order-form__button {
+    order: -1;
+    width: 230px;
+    padding: 12px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .order-form__wrapper {
-    @include desktop-container;
+  .order-form__fieldset--type {
     padding-top: 65px;
     padding-bottom: 50px;
+  }
+
+  .order-form__text {
+    margin-right: 175px;
+  }
+
+  .order-form__wrapper {
+    @include desktop-container;
+  }
+
+  .order-form__options {
+    width: 875px;
+  }
+
+  .order-form__options--color .order-form__option {
+    width: 262px;
+  }
+
+  .order-form__textarea {
+    width: 700px;
   }
 }

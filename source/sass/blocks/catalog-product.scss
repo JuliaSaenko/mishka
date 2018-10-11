@@ -7,7 +7,6 @@
 
 .catalog-product__info {
   @include container;
-  width: 260px;
   border: $catalog-itemborder;
 
   &:hover,
@@ -58,7 +57,6 @@
 @media (min-width: $tablet-width) {
   .catalog-product {
     display: flex;
-    width: 100%;
   }
 
   .catalog-product__title-link {
@@ -105,25 +103,26 @@
   .catalog-product {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border: $catalog-itemborder;
   }
 
+  .catalog-product__title-link {
+    width: 100%;
+  }
+
   .catalog-product__image {
+    display: block;
     width: 316px;
     height: 462px;
   }
 
   .catalog-product__info {
+    flex-grow: 1;
     padding: 0 28px;
-    width: 315px;
+    width: 100%;
     min-height: 195px;
     border: none;
-  }
-
-  .catalog-product__title-link,
-  .catalog-product__header,
-  .catalog-product__footer {
-    width: 315px;
   }
 
   .catalog-product__header {

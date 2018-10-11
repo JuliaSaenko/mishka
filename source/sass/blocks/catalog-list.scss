@@ -1,11 +1,14 @@
 .catalog-list {
   @include simple-list;
   @include container;
+  margin: 0 auto;
   padding-top: 30px;
 }
 
 .catalog-list__item {
+  margin: 0 auto;
   margin-bottom: 30px;
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,6 +35,7 @@
   }
 
   .catalog-list__item {
+    display: flex;
     width: 315px;
   }
 }
