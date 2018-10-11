@@ -5,6 +5,7 @@
 
 .reviews__title {
   margin-bottom: 28px;
+  color: $black;
 }
 
 .rewiews__item {
@@ -24,7 +25,7 @@
   font-size: 17px;
   line-height: 1.4;
   font-weight: 700;
-  /*font-style: normal;*/
+  font-style: normal;
   color: $black;
 }
 
@@ -37,7 +38,118 @@
   font-style: normal;
 }
 
-.reviews__button {
-  display: block;
-  margin-top: 39px;
+.rewiews__button {
+  height: 52px;
+  box-sizing: border-box;
+  border: $border;
+  display: flex;
+  width: 100%;
+  margin: 12px 0 37px 0;
+}
+
+.rewiews__controls {
+  width: 100%;
+  margin-bottom: 38px;
+}
+
+.reviews__control-button {
+  width: 50%;
+  height: 53px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    border-left: $border;
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}
+
+.rewiews__item-2 {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__container {
+    @include tablet-container;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 115px;
+    background-image: url("../img/review@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 350px 458px;
+  }
+
+  .reviews__title {
+    margin-top: 0;
+    order: -2;
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .reviews__button {
+    order: -1;
+    margin-left: auto;
+    width: 180px;
+  }
+
+  .reviews__text {
+    max-width: 643px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .rewiews__controls {
+    margin-left: auto;
+    margin-top: -90px;
+    width: 168px;
+    border: none;
+  }
+
+  .reviews__control-button--next {
+    border-left: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    @include desktop-container;
+    margin-bottom: 68px;
+    padding-top: 75px;
+  }
+
+  .reviews__title {
+    margin: 0;
+  }
+
+  .rewiews__item {
+    margin-top: 50px;
+    padding-left: 175px;
+  }
+
+  .reviews__text {
+    max-width: 875px;
+  }
+
+  .reviews__button {
+    margin-left: auto;
+  }
 }

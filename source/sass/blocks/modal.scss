@@ -1,5 +1,6 @@
 .modal {
   @include container;
+  display: none;
   padding-top: 30px;
   min-height: 337px;
   text-align: center;

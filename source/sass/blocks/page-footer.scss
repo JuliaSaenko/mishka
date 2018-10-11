@@ -1,5 +1,49 @@
 .page-footer {
+  background-color: $gray;
+}
+
+.page-footer__wrapper {
   @include container;
   padding: 30px 0;
-  background-color: $gray;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 100%;
+  }
+
+  .page-footer__wrapper {
+    @include tablet-container;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    padding-top: 20px;
+    width: 102px;
+    height: 34px;
+  }
+
+  .page-footer-logo-image {
+    width: 103px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 105px;
+  }
+
+  .page-footer__wrapper {
+    @include desktop-container;
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
 }

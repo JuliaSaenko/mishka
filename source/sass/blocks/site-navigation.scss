@@ -1,33 +1,8 @@
-.site-navigation {
-  @include simple-list;
-  /*position: absolute;*/
-  box-sizing: border-box;
-}
-
-.site-navigation__item {
-  @include container;
-  min-height: 79px;
-  border-bottom: $border;
-}
-
-.site-navigation__link {
-  display: block;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 700;
-  color: $black;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-
-  &:hover,
-  &:focus {
-    color: rgba($black, 0.6);
-  }
-
-  &:active {
-    color: rgba($black, 0.3);
-  }
-}
+/*@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    z-index: 0;
+  }*/

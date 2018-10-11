@@ -9,6 +9,7 @@
 
 .item-info__options {
   margin-bottom: 28px;
+  width: 100%;
 }
 
 .item-info__label,
@@ -16,4 +17,22 @@
   padding-top: 7px;
   padding-bottom: 7px;
   border-bottom: $border;
+}
+
+
+@media (min-width: $tablet-width) {
+  .item-info__text {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .item-info__options {
+    line-height: 1.33;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item-info__text {
+    margin-bottom: 60px;
+  }
 }

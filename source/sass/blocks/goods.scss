@@ -1,0 +1,86 @@
+.goods-list {
+  @include simple-list;
+}
+
+.goods-list__item {
+  @include container;
+
+  &:hover {
+    transition: 0.5s;
+    margin-top: -5px;
+  }
+
+  &--interior {
+    background-color: $mint;
+  }
+
+  &--toys {
+    background-color: $mint--darker;
+  }
+}
+
+.goods-list__link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 19px;
+  line-height: 1.26;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+
+  &:active .goods-list__text {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods {
+    width: 100%;
+    position: relative;
+    background-color: #f9f9f9;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -12px;
+      left: 0;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: auto 23px;
+      background-repeat: repeat-x;
+      z-index: 5;
+    }
+  }
+
+  .goods-list {
+    @include tablet-container;
+    display: flex;
+  }
+
+  .goods-list__item {
+    width: 50%;
+  }
+
+  .goods-list__text {
+    display: block;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-list {
+    @include desktop-container;
+  }
+
+  .goods-list__link {
+    box-sizing: border-box;
+    padding: 30px 35px;
+  }
+
+  .goods-list__text {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

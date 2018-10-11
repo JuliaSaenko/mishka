@@ -1,18 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   /*@include font-set;*/
-  display: flex;
-  flex-direction: column;
-  word-wrap: break-word;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
   margin: 0;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
   font-family: "OpenSans", sans-serif;
   font-size: 15px;
   line-height: 2;
   font-weight: 400;
+  font-style: normal;
   color: $gray--darker;
   background-color: $white;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .page-description {
   @include no-indent;
@@ -36,4 +53,24 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .page-description {
+    @include tablet-container;
+    margin-top: 76px;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-description {
+    @include desktop-container;
+    margin-top: 125px;
+    max-width: 800px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
