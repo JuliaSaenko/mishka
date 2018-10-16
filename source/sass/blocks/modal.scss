@@ -1,0 +1,25 @@
+.modal {
+  @include container;
+  display: none;
+  padding-top: 30px;
+  min-height: 337px;
+  text-align: center;
+  background-color: $white;
+  border-top: 1px solid $modborder-color;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal__title {
+  @include no-indent;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $black;
+}
+
+.modal__text {
+  display: block;
+  margin-bottom: 24px;
+}

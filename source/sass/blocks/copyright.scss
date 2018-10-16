@@ -1,0 +1,35 @@
+.copyright {
+  @include container;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 23px;
+  width: 260px;
+}
+
+.copyright__by {
+  font-size: 19px;
+  line-height: 0.95;
+  font-weight: 700;
+  color: $black;
+}
+
+.copyright__logo {
+  fill: $mint;
+  width: 27px;
+  height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 182px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .copyright__by,
+  .copyright__cite {
+    padding-left: 30px;
+  }
+}

@@ -1,0 +1,148 @@
+.contacts {
+  padding-top: 39px;
+}
+
+.contacts__container {
+  @include container;
+}
+
+.contacts__title {
+  @include no-indent;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 700;
+  color: $black;
+}
+
+.contacts__data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.contacts__row {
+  @include no-indent;
+}
+
+.contacts__text,
+.contacts__link,
+.contacts__adress {
+  width: 50%;
+}
+
+.contacts__text {
+  padding-right: 32px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: $gray--darker;
+  border-bottom: 1px solid $mint;
+
+  &:hover,
+  &:focus {
+    color: $mint;
+  }
+
+  &:active {
+    color: rgba($mint, 0.3);
+    border-bottom: 1px solid rgba($mint, 0.3);
+  }
+}
+
+.contacts__map {
+  margin-top: 40px;
+  width: 100%;
+  min-height: 457px;
+}
+
+.contacts__iframe {
+  display: block;
+  margin: 0;
+  width: 100%;
+  min-height: 457px;
+  border: none;
+}
+
+.contacts__button {
+  display: block;
+  margin: 39px auto;
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    @include tablet-container;
+  }
+
+  .contacts__title {
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .contacts__row {
+    width: 50%;
+  }
+
+  .contacts__text {
+    padding-right: 26px;
+  }
+
+  .contacts__button {
+    margin: 55px auto;
+    width: 231px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    padding-top: 145px;
+  }
+
+  .contacts__container {
+    @include desktop-container;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__data {
+    justify-content: flex-start;
+    margin: 0;
+    padding-right: 50%;
+    margin-bottom: 80px;
+  }
+
+  .contacts__row {
+    width: 290px;
+  }
+
+  .contacts__title {
+    padding-right: 50%;
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .contacts__text {
+    margin-right: 21px;
+  }
+
+  .contacts__adress {
+    max-width: 225px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__button {
+    margin: 0;
+    margin-left: 175px;
+  }
+}

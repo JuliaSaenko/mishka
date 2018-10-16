@@ -1,0 +1,149 @@
+.weekly-goods__container {
+  @include container;
+  position: relative;
+  padding-top: 28px;
+}
+
+.weekly-goods__header {
+  padding-bottom: 25px;
+}
+
+.weekly-goods__title {
+  @include no-indent;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $black;
+}
+
+.weekly-goods__label {
+  font-weight: 700;
+  color: $mint;
+  text-transform: uppercase;
+}
+
+.weekly-goods__price {
+  @include no-indent;
+  padding: 25px 0;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: $gray--darker;
+  text-align: center;
+}
+
+.weekly-goods__image {
+  text-align: center;
+}
+
+.weekly-goods__button {
+  margin-bottom: 36px;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-goods__container {
+    @include tablet-container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .weekly-goods__header {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .weekly-goods__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .weekly-goods__label {
+    padding-top: 10px;
+    max-width: 80px;
+    font-size: 17px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .weekly-goods__info {
+    margin-bottom: 31px;
+    padding-right: 43px;
+    width: 50%;
+  }
+
+  .weekly-goods__price-info {
+    margin-top: -130px;
+    width: 292px;
+  }
+
+  .weekly-goods__price {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .weekly-goods__test-size { /*TEST*/
+    width: 333px;
+    height: 404px;
+  }
+
+  .weekly-goods__button {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weekly-goods__container {
+    @include desktop-container;
+    position: relative;
+    flex-direction: column;
+    padding-top: 71px;
+  }
+
+  .weekly-goods__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 55px;
+    z-index: 1;
+  }
+
+  .weekly-goods__title {
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 1;
+  }
+
+  .weekly-goods__label {
+    margin-left: 42px;
+    margin-right: 50px;
+  }
+
+  .weekly-goods__info {
+    margin-bottom: 83px;
+    padding-left: 175px;
+    padding-right: 56px;
+  }
+
+  .weekly-goods__image {
+    position: absolute;
+    top: 71px;
+    right: 100px;
+  }
+
+  .weekly-goods__price-info {
+    margin: 0;
+    margin-left: 175px;
+    padding-right: 56px;
+    width: 292px;
+  }
+
+  .weekly-goods__test-size { /*TEST*/
+    width: 525px;
+    height: 635px;
+  }
+}

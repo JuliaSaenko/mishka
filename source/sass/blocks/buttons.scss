@@ -1,0 +1,42 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  padding: 12px 39px;
+  width: 100%;
+  font-size: 17px;
+  line-height: 0.94;
+  font-weight: 700;
+  color: $gray--darker;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $white;
+  border: $button-border;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $gray--darker;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &--small {
+    padding: 12px 16px;
+    width: 188px;
+  }
+
+  &--mint {
+    color: $white;
+    background-color: $mint;
+    border: $button-border--mint;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  line-height: 1.18;
+}

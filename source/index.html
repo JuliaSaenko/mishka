@@ -3,26 +3,33 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет магазин Mishka</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
       <div class="page-header__top">
         <nav class="main-nav">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" width="" height="" alt="Логотип интернет магазина Mishka">
-          </a>
-          <ul class="main-nav__list site-navigation">
-            <li class="site-navigation__item"><a class="site-navigation__link" href="catalog.html">Каталог товаров</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="form.html">Вязание на заказ</a></li>
-            <li class="site-navigation__item site-navigation__item--search"><input class="site-navigation__link" type="search" name="site-search" placeholder="Поиск по сайту"></li>
-            <li class="site-navigation__item site-navigation__item--cart"><a class="site-navigation__link" href="#">Корзина: пока пуста</a></li>
+          <!-- <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button> -->
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--logo">
+              <a class="main-nav__link main-nav__link--logo">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Mishka">
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--form"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--search"><a class="main-nav__link"></a></li>
+            <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item main-nav__item--new"><a class="main-nav__link" href="#">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--sale"><a class="main-nav__link" href="#">Распродажа</a></li>
           </ul>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
         </nav>
       </div>
       <div class="page-header__intro page-header__intro--image">
+        <p class="page-header__text page-header__text--index">Бесплатная доставка по России</p>
         <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
       </div>
     </header>
@@ -37,8 +44,8 @@
       <article class="weekly-goods">
         <div class="weekly-goods__container">
           <header class="weekly-goods__header">
-            <h2 class="weekly-goods__label">Вязаные корзинки</h2>
-            <b class="weekly-goods__title section-title">Товар недели</b>
+            <h2 class="weekly-goods__title">Вязаные корзинки</h2>
+            <b class="weekly-goods__label">Товар недели</b>
           </header>
           <div class="weekly-goods__info item-info">
             <p class="item-info__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -58,11 +65,11 @@
             </table>
           </div>
           <div class="weekly-goods__image">
-            <img src="" alt="Товар недели - вязаные корзинки">
+            <img class="weekly-goods__test-size" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели - вязаные корзинки">
           </div>
           <footer class="weekly-goods__price-info">
             <p class="weekly-goods__price">Цена: 990 руб.</p>
-            <a class="weekly-goods__button button" href="#" >Заказать</a>
+            <a class="weekly-goods__button button" href="#">Заказать</a>
           </footer>
         </div>
       </article>
@@ -92,14 +99,14 @@
                 <span class="rewiews__hashtag">@misssssiskras</span>
               </cite>
             </blockquote>
-            <blockquote class="rewiews__item slider__item">
+            <blockquote class="rewiews__item rewiews__item-2 slider__item">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="rewiews__author">
                 <b class="rewiews__author-name">Анастасия Красильникова</b>
                 <span class="rewiews__hashtag">@misssssiskras</span>
               </cite>
             </blockquote>
-            <blockquote class="rewiews__item slider__item">
+            <blockquote class="rewiews__item rewiews__item-2 slider__item">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="rewiews__author">
                 <b class="rewiews__author-name">Анастасия Красильникова</b>
@@ -107,9 +114,9 @@
               </cite>
             </blockquote>
           </div>
-          <div class="slider__controls">
-            <button class="slider__button slider__button--prev" type="button">Предыдущий отзыв</button>
-            <button class="slider__button slider__button--next" type="button">Следующий отзыв</button>
+          <div class="rewiews__controls slider__controls">
+            <button class="rewiews__control-button rewiews__button--prev slider__button slider__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="rewiews__control-button rewiews__button--next slider__button slider__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </div>
           <a class="reviews__button button" href="#">Написать</a>
         </div>
@@ -117,36 +124,52 @@
 
       <section class="contacts">
         <div class="contacts__container">
-          <h2 class="contacts__title section-title">Контакты</h2>
-          <p class="contacts__row">
-            <span class="contacts__text">e-mail:</span>
-            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">
-          </p>
-          <p class="contacts__row">
-            <span class="contacts__text">адрес:</span>
-            <span class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-          </p>
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__data">
+            <p class="contacts__row">
+              <span class="contacts__text">e-mail:</span>
+              <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </p>
+            <p class="contacts__row">
+              <span class="contacts__text">адрес:</span>
+              <span class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            </p>
+          </div>
         </div>
         <div class="contacts__map">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALQO0GGyKJfySHsTgPr33OIdCC6hSjYJY&q=большая+Конюшенная,19" allowfullscreen></iframe>
         </div>
-        <div class="contacts__container">
-          <a class="contacts__button button" href="#">Напишите нам</a>
-        </div>
+        <a class="contacts__button button" href="#">Напишите нам</a>
+
       </section>
     </main>
 
     <footer class="page-footer">
-      <ul class="page-footer__social social-buttons">
-        <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link--instagram" href="#"><span class="visually-hidden">Подписывайтесь на наш Инстаграм</span></a></li>
-        <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link--facebook" href="#"><span class="visually-hidden">Следите за новостями магазина в Фейсбук</span></a></li>
-        <li class="social-buttons__item"><a class="social-buttons__link social-buttons__link--twitter" href="#"><span class="visually-hidden">Читайте нас в Твиттере</span></a></li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__by">Разработано</span>
-        <a class="copyright__cite" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="" alt="HTML Academy">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
         </a>
+        <ul class="page-footer__social social-buttons">
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--instagram" href="#">
+              <span class="visually-hidden">Подписывайтесь на наш Инстаграм</span>
+            </a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--facebook" href="#">
+              <span class="visually-hidden">Следите за новостями магазина в Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--twitter" href="#">
+              <span class="visually-hidden">Читайте нас в Твиттере</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__by">Разработано</span>
+          <a class="copyright__cite" href="https://htmlacademy.ru/intensive/adaptive">
+          </a>
+        </div>
       </div>
     </footer>
 
@@ -168,7 +191,7 @@
               <input class="choose-size__input-radio visually-hidden" type="radio" name="size" value="size-L" id="l-size">
             </li>
           </ul>
-          <button class="choose-size__button button" type="submit">Добавить</button>
+          <button class="choose-size__button button button--mint" type="submit">Добавить</button>
         </form>
       </section>
   </body>

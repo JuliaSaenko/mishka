@@ -1,0 +1,132 @@
+.catalog-product__title-link {
+  display: block;
+  line-height: 0;/*--------------------*/
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.catalog-product__info {
+  @include container;
+  border: $catalog-itemborder;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.catalog-product__header {
+  padding: 25px 0;
+  border-bottom: $catalog-itemborder;
+}
+
+.catalog-product__title {
+  @include no-indent;
+}
+
+.catalog-product__link {
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: $black;
+  text-decoration: none;
+}
+
+.catalog-product__description {
+  @include no-indent;
+  font-size: 13px;
+  line-height: 2.3;
+  color: $gray--darker;
+}
+
+.catalog-product__footer {
+  padding: 23px 0;
+}
+
+.catalog-product__price {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-product {
+    display: flex;
+  }
+
+  .catalog-product__title-link {
+    width: 50%;
+  }
+
+  .catalog-product__image {
+    width: 334px;
+    height: 334px;
+  }
+
+  .catalog-product__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .catalog-product__header {
+    border: none;
+  }
+
+  .catalog-product__footer {
+    border-top: $catalog-itemborder;
+  }
+
+  .catalog-product__link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .catalog-product__description {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .catalog-product__price {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: $catalog-itemborder;
+  }
+
+  .catalog-product__title-link {
+    width: 100%;
+  }
+
+  .catalog-product__image {
+    display: block;
+    width: 316px;
+    height: 462px;
+  }
+
+  .catalog-product__info {
+    flex-grow: 1;
+    padding: 0 28px;
+    width: 100%;
+    min-height: 195px;
+    border: none;
+  }
+
+  .catalog-product__header {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
