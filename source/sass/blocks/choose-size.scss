@@ -1,0 +1,29 @@
+.choose-size__list {
+  @include simple-list;
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.choose-size__item {
+  margin-bottom: 31px;
+}
+
+.choose-size__label-radio {
+  display: block;
+  width: 78px;
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid $gray--lighter;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $modborder-color;
+  }
+
+  &:active {
+    border: 2px solid $modborder-color--active;
+  }
+}

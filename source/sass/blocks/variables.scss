@@ -1,0 +1,27 @@
+$tablet-width: 768px;
+$desktop-width: 1250px;
+$mobile-only: 767px;
+
+$white: #ffffff;
+$black: #000000;
+$gray--lighter: #ececec;
+$gray: #f1f1f1;
+$gray--darker: #444444;
+$modborder-color: #c7c7c7;
+$footerborder-color: #e5e5e5;
+$catalogitem-bcolor: #ededed;
+$modborder-color--active: #62d1ba;
+$mint: #63d1bb;
+$mint--darker: #56c3b2;
+$brown: #231f20;
+
+/*$font-base: 15px;
+$lineh-base: 2;
+$fontw-base: 400;*/
+
+$border: 1px solid $gray--lighter;
+$form-border: 2px solid $black;
+$catalog-itemborder: 1px solid $catalogitem-bcolor;
+$button-border: 2px solid $gray--darker;
+$button-border--mint: 2px solid $mint;
+$footer-border: 1px solid $footerborder-color;

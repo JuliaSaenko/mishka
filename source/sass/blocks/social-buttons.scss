@@ -1,0 +1,23 @@
+.social-buttons {
+  @include simple-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-right: 49px;
+  padding-left: 57px;
+  width: 260px;
+  border-bottom: $footer-border;
+}
+
+.social-buttons__item {
+  margin-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-buttons {
+    padding-top: 23px;
+    border: none;
+  }
+}

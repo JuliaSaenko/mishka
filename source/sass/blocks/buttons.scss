@@ -1,0 +1,43 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  padding: 15px 39px 18px; /*---*/
+  width: 100%;
+  font-size: 17px;
+  line-height: 0.94;
+  font-weight: 700;
+  color: $gray--darker;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $white;
+  border: $button-border;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $gray--darker;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &--small {
+    margin-right: 33px;
+    padding: 17px 23px;
+    width: 190px;
+  }
+
+  &--mint {
+    color: $white;
+    background-color: $mint;
+    border: $button-border--mint;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  line-height: 1.18;
+}
