@@ -5,7 +5,7 @@
 }
 
 .weekly-goods__header {
-  margin-bottom: 18px;/*---*/
+  margin-bottom: 18px;
 }
 
 .weekly-goods__title {
@@ -18,8 +18,8 @@
 
 .weekly-goods__label {
   @include no-indent;
-  font-size: 17px;/*---*/
-  line-height: 1.18;/*---*/
+  font-size: 17px;
+  line-height: 1.18;
   font-weight: 700;
   color: $mint;
   text-transform: uppercase;
@@ -41,12 +41,6 @@
 
 .weekly-goods__image {
   text-align: center;
-}
-
-.weekly-goods__test-size { /*---*/
-  display: block;
-  width: 260px;
-  height: 315px;
 }
 
 .weekly-goods__button {
