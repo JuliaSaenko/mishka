@@ -1,11 +1,21 @@
 .production-process {
   @include container;
+  margin-bottom: 58px;
 }
 
 .production-process__container {
   padding-top: 24px;
   padding-bottom: 32px;
   border: $catalog-itemborder;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production-process__player {
@@ -46,15 +56,6 @@
 
 .production-process__info {
   padding-left: 33px;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-  }
 }
 
 .production-process__title {

@@ -30,12 +30,12 @@
 
 .catalog-product__title {
   @include no-indent;
-}
-
-.catalog-product__link {
   font-size: 17px;
   line-height: 1.4;
   font-weight: 700;
+}
+
+.catalog-product__link {
   color: $black;
   text-decoration: none;
 }
@@ -89,7 +89,7 @@
     border-top: $catalog-itemborder;
   }
 
-  .catalog-product__link {
+  .catalog-product__title {
     font-size: 20px;
     line-height: 1.2;
   }
