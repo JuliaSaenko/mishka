@@ -11,15 +11,15 @@
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <nav class="main-nav">
-          <!-- <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button> -->
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="main-nav__list">
-            <li class="main-nav__logo main-nav__item--logo">
-              <a class="main-nav__link  main-nav__link--logo" href="index.html">
+            <li class="main-nav__item main-nav__item--logo">
+              <a class="main-nav__link main-nav__link--logo" href="index.html">
                 <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Mishka">
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--catalog main-nav__item--active"><a class="main-nav__link">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link main-nav__link--active">Каталог товаров</a></li>
             <li class="main-nav__item main-nav__item--form"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item main-nav__item--search"><a class="main-nav__link"></a></li>
             <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
@@ -76,9 +76,9 @@
               <a class="catalog-product__title-link" href="#">
                 <img class="catalog-product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка дл игрушек">
               </a>
-              <div class="catalog-product__info">
+              <div class="catalog-product__info catalog-product__info--test">
                 <header class="catalog-product__header">
-                  <h3 class="catalog-product__title"><a class="catalog-product__link" href="#">Большая корзинка для игрушек</a></h3>
+                  <h3 class="catalog-product__title"><a class="catalog-product__link" href="#">Большая&nbsp;корзинка для&nbsp;игрушек</a></h3>
                   <p class="catalog-product__description">Диаметр 30 см, высота 30 см</p>
                 </header>
                 <footer class="catalog-product__footer">
@@ -156,5 +156,6 @@
         <button class="choose-size__button button button--mint" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

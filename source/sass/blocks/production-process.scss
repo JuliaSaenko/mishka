@@ -1,16 +1,26 @@
 .production-process {
   @include container;
+  margin-bottom: 58px;
 }
 
 .production-process__container {
   padding-top: 24px;
   padding-bottom: 32px;
   border: $catalog-itemborder;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production-process__player {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 
 .production-process__video {
@@ -45,35 +55,27 @@
 }
 
 .production-process__info {
-  padding-left: 28px;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-  }
+  padding-left: 33px;
 }
 
 .production-process__title {
   @include no-indent;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
+  padding-left: 89px;
   font-size: 17px;
   line-height: 1.4;
   font-weight: 700;
   color: $black;
-  text-align: center;
 }
 
 .production-process__description {
   @include no-indent;
   display: block;
   margin-bottom: 24px;
+  padding-right: 43px;
   font-size: 13px;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 @media (min-width: $tablet-width) {
@@ -92,15 +94,16 @@
   .production-process__title {
     margin-right: auto;
     margin-bottom: 0;
-    padding-left: 65px;
+    padding-left: 105px;
     padding-right: 65px;
-    padding-bottom: 36px;
+    padding-bottom: 32px;
     font-size: 20px;
     line-height: 1.2;
   }
 
   .production-process__player {
     order: -1;
+    margin-bottom: 27px;
   }
 
   .production-process__video {
@@ -109,10 +112,11 @@
   }
 
   .production-process__info {
-    padding: 0 43px;
+    padding: 0 39px;
   }
 
   .production-process__description {
+    padding: 0;
     margin-bottom: 35px;
     font-size: 15px;
     line-height: 2;

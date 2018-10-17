@@ -11,8 +11,8 @@
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <nav class="main-nav">
-          <!-- <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button> -->
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--logo">
               <a class="main-nav__link  main-nav__link--logo" href="index.html">
@@ -20,7 +20,7 @@
               </a>
             </li>
             <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item main-nav__item--form main-nav__item--active"><a class="main-nav__link">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--form"><a class="main-nav__link">Вязание на заказ</a></li>
             <li class="main-nav__item main-nav__item--search"><a class="main-nav__link"></a></li>
             <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
             <li class="main-nav__item main-nav__item--new"><a class="main-nav__link" href="#">Новые поступления</a></li>
@@ -88,15 +88,15 @@
             <h2 class="order-form__title">Фио</h2>
             <ul class="order-form__options">
               <li class="order-form__option order-form__option--text">
-                <label  class="order-form__label order-form__label--text" for="first-name">Имя:</label>
+                <label  class="order-form__label-text" for="first-name">Имя:</label>
                 <input  class="order-form__text" type="text" name="first-name" value="" placeholder="Введите ваше имя*" id="first-name">
               </li>
               <li class="order-form__option order-form__option--text">
-                <label class="order-form__label order-form__label--text" for="last-name">Фамилия:</label>
+                <label class="order-form__label-text" for="last-name">Фамилия:</label>
                 <input  class="order-form__text" type="text" name="last-name" value="" placeholder="Укажите фамилию*" id="last-name">
               </li>
               <li class="order-form__option order-form__option--text">
-                <label class="order-form__label order-form__label--text" for="middle-name">Отчество:</label>
+                <label class="order-form__label-text" for="middle-name">Отчество:</label>
                 <input  class="order-form__text" type="text" name="middle-name" value="" placeholder="Отчество, если желаете" id="middle-name">
               </li>
             </ul>
@@ -104,7 +104,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--tel">
           <div class="order-form__wrapper">
-            <h2 class="order-form__title">Тел</h2>
+            <h2 class="order-form__title order-form__title--text">Тел</h2>
             <p class="order-form__option order-form__option--text">
                 <label class="visually-hidden" for="phone-number">Тел</label>
                 <input  class="order-form__text" type="tel" name="phone-number" value="" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ XXX ХХ ХХ*" id="phone-number">
@@ -113,7 +113,7 @@
           </fieldset>
           <fieldset class="order-form__fieldset order-form__fieldset--email">
             <div class="order-form__wrapper">
-              <h2 class="order-form__title">Email</h2>
+              <h2 class="order-form__title order-form__title--text">E-mail</h2>
               <p class="order-form__option order-form__option--text">
                 <label class="visually-hidden" for="email">Email</label>
                 <input  class="order-form__text" type="email" name="email" value="" placeholder="Ваш Email*" id="email">
@@ -123,7 +123,7 @@
         <fieldset class="order-form__fieldset order-form__fieldset--text">
           <div class="order-form__wrapper">
             <label class="order-form__title" for="additional-info">Доп</label>
-            <textarea class="order-form__textarea" form="order-form-form" name="additional-info" rows="7" placeholder="Опишите все ваши пожелания к заказу" id="additional-info"></textarea>
+            <textarea class="order-form__textarea" form="order-form-form" name="additional-info" rows="6" placeholder="Опишите все ваши пожелания к заказу" id="additional-info"></textarea>
           </div>
         </fieldset>
         <div class="order-form__footer">
@@ -161,5 +161,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

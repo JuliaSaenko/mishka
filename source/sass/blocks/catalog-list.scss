@@ -20,7 +20,7 @@
   }
 
   .catalog-list__item {
-    margin-bottom: 58px;
+    margin-bottom: 54px;
     width: 668px;
   }
 }
@@ -30,12 +30,18 @@
     @include desktop-container;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 132px;
+    margin-bottom: 37px;
+    padding-top: 130px;
   }
 
   .catalog-list__item {
     display: flex;
+    margin: 0;
+    margin-bottom: 20px;
     width: 315px;
+  }
+
+  .catalog-list__item:not(:nth-child(3n)) {
+    margin-right: 51px;
   }
 }
