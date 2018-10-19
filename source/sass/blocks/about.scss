@@ -1,6 +1,6 @@
 .about {
-  padding-top: 33px;/*---*/
-  padding-bottom: 33px;/*---*/
+  padding-top: 14px;
+  padding-bottom: 33px;
 }
 
 .about__container {
@@ -10,8 +10,8 @@
 .about-title {
   @include no-indent;
   margin-bottom: 25px;
-  font-size: 25px;/*---*/
-  line-height: 1.2;/*--*/
+  font-size: 25px;
+  line-height: 1.2;
   color: $black;
 }
 
@@ -20,12 +20,49 @@
 }
 
 .about__item {
-  padding-top: 60px;/*---*/
-  padding-bottom: 23px;/*---*/
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 23px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
   color: $black;
+}
+
+.about__item-icon {
+  position: absolute;
+  fill: $mint;
+  outline: 1px solid red;
+
+  &--eko {
+    top: 8px;
+    left: 8px;
+  }
+
+  &--style {
+    top: 8px;
+    left: 0;
+  }
+
+  &--like {
+    top: 13px;
+    left: 7px;
+  }
+
+  &--handmade {
+    top: 11px;
+    left: 3px;
+  }
+
+  &--rocket {
+    top: 11px;
+    left: -5px;
+  }
+
+  &--gift {
+    top: 10px;
+    left: 3px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -35,7 +72,7 @@
 
   .about__container {
     @include tablet-container;
-    padding-top: 35px;
+    padding-top: 25px;
   }
 
   .about__list {
@@ -81,6 +118,38 @@
       order: 6;
     }
   }
+
+  .about__item-icon {
+    &--eko {
+      top: 23px;
+      left: 8px;
+    }
+
+    &--style {
+      top: 24px;
+      left: 0;
+    }
+
+    &--like {
+      top: 28px;
+      left: 7px;
+    }
+
+    &--handmade {
+      top: 26px;
+      left: 3px;
+    }
+
+    &--rocket {
+      top: 26px;
+      left: -5px;
+    }
+
+    &--gift {
+      top: 25px;
+      left: 3px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -90,7 +159,7 @@
 
   .about__container {
     @include desktop-container;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 35px;
   }
 

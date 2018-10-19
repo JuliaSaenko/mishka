@@ -26,13 +26,11 @@
 
   .page-footer__logo {
     display: block;
-    padding-top: 20px;
-    width: 102px;
-    height: 34px;
+    padding: 0;
   }
 
-  .page-footer-logo-image {
-    width: 103px;
+  .page-footer__icon {
+    outline: 1px solid red;
   }
 }
 

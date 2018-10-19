@@ -1,3 +1,7 @@
+.weekly-goods {
+  padding-bottom: 20px;
+}
+
 .weekly-goods__container {
   @include container;
   position: relative;
@@ -26,7 +30,7 @@
 }
 
 .weekly-goods__price-info {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .weekly-goods__price {
@@ -87,11 +91,12 @@
 
   .weekly-goods__price-info {
     margin-top: -137px;
+    padding-top: 15px;
     width: 292px;
   }
 
   .weekly-goods__price {
-    margin-bottom: 33px;
+    margin-bottom: 35px;
     padding: 0;
     font-size: 20px;
     line-height: 1.2;

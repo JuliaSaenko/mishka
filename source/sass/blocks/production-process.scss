@@ -81,7 +81,7 @@
 @media (min-width: $tablet-width) {
   .production-process {
     @include tablet-container;
-    margin-bottom: 105px;
+    margin-bottom: 60px;
   }
 
   .production-process__container {
@@ -160,7 +160,7 @@
   }
 
   .production-process__info {
-    margin-top: -300px;
+    margin-top: -280px;
     margin-left: 690px;
     padding: 0 60px;
     width: 350px;

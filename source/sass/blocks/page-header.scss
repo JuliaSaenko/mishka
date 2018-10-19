@@ -8,7 +8,7 @@
 }
 
 .page-header__intro--image {
-  min-height: 282px;/*---*/
+  min-height: 282px;
   text-align: center;
   background-color: #fbfbfb;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -23,8 +23,8 @@
 
 .page-header__title {
   @include no-indent;
-  padding-top: 49px;/*---*/
-  padding-bottom: 55px;
+  padding-top: 49px;
+  padding-bottom: 58px;
   font-size: 27px;
   line-height: 1.11;
   font-weight: 700;

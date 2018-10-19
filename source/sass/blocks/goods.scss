@@ -35,30 +35,32 @@
   }
 }
 
-.goods-list__text {/*---*/
+.goods-list__text {
   @include no-indent;
   display: block;
   max-width: 50%;
 }
 
+/*.goods-list__int-icon {
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  outline: 1px solid red;
+  fill: rgba(#44c0aa 0.5);
+
+  &:hover {
+    fill: rgba(#44c0aa 0.7);
+  }
+
+  &:active {
+    fill: rgba(#44c0aa 0.3);
+  }
+}*/
+
 @media (min-width: $tablet-width) {
   .goods {
     width: 100%;
-    position: relative;
     background-color: #f9f9f9;
-
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: -12px;
-      left: 0;
-      width: 100%;
-      height: 23px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: auto 23px;
-      background-repeat: repeat-x;
-      z-index: 5;
-    }
   }
 
   .goods-list {
