@@ -9,14 +9,18 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header zigzag-fill">
       <div class="page-header__top">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--logo  main-nav__item--active">
-              <a class="main-nav__link main-nav__link--logo" href="index.html">
-                <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Mishka">
+            <li class="main-nav__item main-nav__item--logo">
+              <a class="main-nav__link  main-nav__link--logo" href="index.html">
+                <picture>
+                  <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Mishka">
+                </picture>
               </a>
             </li>
             <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
@@ -136,31 +140,47 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
+          <svg class="page-footer__icon" width="102" height="34">
+            <use xlink:href=""></use>
+          </svg>
         </a>
         <ul class="page-footer__social social-buttons">
           <li class="social-buttons__item">
             <a class="social-buttons__link social-buttons__link--instagram" href="#">
               <span class="visually-hidden">Подписывайтесь на наш Инстаграм</span>
+              <svg class="social-buttonsr__icon" width="22" height="21">
+                <use xlink:href=""></use>
+              </svg>
             </a>
           </li>
           <li class="social-buttons__item">
             <a class="social-buttons__link social-buttons__link--facebook" href="#">
               <span class="visually-hidden">Следите за новостями магазина в Фейсбук</span>
+              <svg class="social-buttons__icon" width="15" height="28">
+                <use xlink:href=""></use>
+              </svg>
             </a>
           </li>
           <li class="social-buttons__item">
             <a class="social-buttons__link social-buttons__link--twitter" href="#">
               <span class="visually-hidden">Читайте нас в Твиттере</span>
+              <svg class="social-buttons__icon" width="23" height="20">
+                <use xlink:href=""></use>
+              </svg>
             </a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
           <span class="copyright__by">Разработано</span>
           <a class="copyright__cite" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" width="27" height="34">
+              <use xlink:href=""></use>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

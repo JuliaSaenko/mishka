@@ -1,34 +1,45 @@
 .copyright {
   @include container;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding-top: 23px;
+  padding-top: 8px;
   width: 260px;
 }
 
 .copyright__by {
+  @include no-indent;
+  display: block;
+  padding-left: 36px;
   font-size: 19px;
   line-height: 0.95;
   font-weight: 700;
   color: $black;
 }
 
+.copyright__cite {
+  margin-top: 15px;
+  margin-left: 31px;
+}
+
 .copyright__logo {
   fill: $mint;
-  width: 27px;
-  height: 24px;
+  outline: 1px solid red;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 182px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
   }
 
   .copyright__by,
   .copyright__cite {
-    padding-left: 30px;
+    padding: 0;
+  }
+
+  .copyright__cite {
+    margin-top: 10px;
+    margin-left: 28px;
   }
 }
