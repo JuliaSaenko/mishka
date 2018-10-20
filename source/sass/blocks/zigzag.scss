@@ -1,10 +1,11 @@
 .zigzag-line {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    bottom: 12px;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 7px;
@@ -16,7 +17,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .zigzag-line::after {
+  .zigzag-line::before {
+    left: 0;
     height: 17px;
     background-position: 19px 0;
     background-size: 768px 17px;
@@ -24,8 +26,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .zigzag-line::after {
-    bottom: 22px;
+  .zigzag-line::before {
+    top: -22px;
     left: 50px;
     width: 1050px;
     height: 22px;
@@ -60,9 +62,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .zigzag-fill::after {
-    bottom: -16px;
-    height: 34px;
-    background-size: 1250px;
+  .zigzag-fill {
+    &::after {
+      bottom: -10px;
+      background-size: auto 34px;
+    }
+
+    &--section::after {
+      bottom: -19px;
+      height: 37px;
+      background-size: 1250px;
+    }
   }
 }
