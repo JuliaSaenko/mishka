@@ -29,7 +29,7 @@
 
 .production-process__play-button {
   position: absolute;
-  top: 50%;
+  top: 75px;
   left: 50%;
 
   width: 100px;
@@ -60,6 +60,7 @@
 
 .production-process__title {
   @include no-indent;
+  position: relative;
   display: block;
   margin-bottom: 26px;
   padding-left: 89px;
@@ -67,13 +68,24 @@
   line-height: 1.4;
   font-weight: 700;
   color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 32px;
+    width: 32px;
+    height: 27px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .production-process__description {
   @include no-indent;
   display: block;
   margin-bottom: 24px;
-  padding-right: 43px;
+  padding-right: 40px;
   font-size: 13px;
   line-height: 1.85;
 }
@@ -81,17 +93,21 @@
 @media (min-width: $tablet-width) {
   .production-process {
     @include tablet-container;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   .production-process__container {
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     padding-top: 0;
     padding-bottom: 46px;
+    min-height: 742px;
   }
 
   .production-process__title {
+    margin-top: auto;
     margin-right: auto;
     margin-bottom: 0;
     padding-left: 105px;
@@ -99,10 +115,19 @@
     padding-bottom: 32px;
     font-size: 20px;
     line-height: 1.2;
+
+    &::before {
+      top: -4px;
+      left: 42px;
+      width: 32px;
+      height: 27px;
+    }
   }
 
   .production-process__player {
-    order: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
     margin-bottom: 27px;
   }
 
@@ -111,8 +136,12 @@
     height: 455px;
   }
 
+  .production-process__play-button {
+    top: 50%;
+  }
+
   .production-process__info {
-    padding: 0 39px;
+    padding: 0 40px;
   }
 
   .production-process__description {
@@ -130,22 +159,30 @@
 @media (min-width: $desktop-width) {
   .production-process {
     @include desktop-container;
-    margin-bottom: 0;
+    margin-bottom: 100px;
   }
 
   .production-process__container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0;
+    min-height: 456px;
   }
 
   .production-process__title {
-    margin: 45px 60px 35px;
+    margin-top: 40px;
+    margin-bottom: 31px;
+    margin-right: 140px;
     padding: 0;
     padding-top: 55px;
+    width: 150px;
     font-size: 20px;
     line-height: 1.2;
+
+    &::before {
+      top: 0;
+      left: 3px;
+      width: 32px;
+      height: 27px;
+    }
   }
 
   .production-process__player {
@@ -160,9 +197,11 @@
   }
 
   .production-process__info {
-    margin-top: -280px;
-    margin-left: 690px;
-    padding: 0 60px;
+    padding: 0 58px 0 62px;
     width: 350px;
+  }
+
+  .production-process__description {
+    margin-bottom: 46px;
   }
 }

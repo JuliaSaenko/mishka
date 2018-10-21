@@ -74,7 +74,6 @@
   top: 5px;
   left: -42px;
   outline: 1px solid red;
-
   opacity: 0.2;
 
   &:hover {
@@ -92,7 +91,6 @@
   top: 5px;
   left: -45px;
   outline: 1px solid red;
-
   opacity: 0.2;
 
   &:hover {
@@ -287,6 +285,7 @@
 
     &--search {
       width: 83px;
+      font-size: 0;
     }
 
     &--sale {
@@ -294,23 +293,24 @@
     }
 
     &--logo {
-      margin-right: 93px;
+      margin-right: 103px;
       margin-left: 74px;
       padding: 0;
-      /*padding-bottom: 30px;*/
       width: 149px;
       height: 72px;
       order: -1;
     }
   }
 
-  .main-nav__logo-image {/*--Не работает!!!!!--*/
-    width: 149px;
-    height: 72px;
+  .main-nav__link--logo {
+    margin-right: 0;
+    padding: 0;
+    padding-top: 10px;
+    width: auto;
   }
 
-  .main-nav__link--logo {
-    padding: 0;
-    margin-right: 0;
+  .main-nav__logo-image {
+    width: 149px;
+    height: 73px;
   }
 }

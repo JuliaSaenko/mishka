@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет магазин Mishka</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
 
   <body>
@@ -47,33 +48,27 @@
         </nav>
       </div>
       <div class="page-header__intro page-header__intro--image">
-        <p class="page-header__text page-header__text--index">Бесплатная доставка по России</p>
-        <h1 class="page-header__title page-header__title--index">Милые&nbsp;штуки ручной работы&nbsp;для дома</h1><!---->
+        <p class="page-header__text page-header__text">Бесплатная доставка по России</p>
+        <h1 class="page-header__title page-header__title">Милые&nbsp;штуки ручной работы&nbsp;для дома</h1>
       </div>
     </header>
 
     <main class="page-main">
-      <div class="goods zigzag-fill">
+      <div class="goods zigzag-fill zigzag-fill--section">
         <ul class="goods__list goods-list">
-          <li class="goods-list__item goods-list__item--interior">
-            <a class="goods-list__link" href="#">
+          <li class="goods-list__item">
+            <a class="goods-list__link goods-list__link--interior" href="#">
               <span class="goods-list__text">Предметы<br> интерьера</span>
-              <!-- <svg class="goods-list__int-icon" width="40" height="62">
-                <use xlink:href=""></use>
-              </svg> -->
             </a>
           </li>
-          <li class="goods-list__item goods-list__item--toys">
-            <a class="goods-list__link" href="#">
+          <li class="goods-list__item">
+            <a class="goods-list__link goods-list__link--toys" href="#">
               <span class="goods-list__text">Детские<br> игрушки</span>
-              <!-- <svg class="goods-list__toy-icon" width="60" height="60"> -->
-                <!-- <use xlink:href=""></use> -->
-              <!-- </svg> -->
             </a>
           </li>
         </ul>
       </div>
-      <article class="weekly-goods zigzag-line">
+      <article class="weekly-goods">
         <div class="weekly-goods__container">
           <header class="weekly-goods__header">
             <h2 class="weekly-goods__title">Вязаные корзинки</h2>
@@ -114,49 +109,20 @@
       </article>
 
       <section class="about">
-        <div class="about__container">
+        <div class="about__container zigzag-line">
           <h2 class="about-title section-title">Коротко о нас:</h2>
           <ul class="about__list">
-            <li class="about__item about__item--eko">
-              <svg class="about__item-icon about__item-icon--eko" width="32" height="37">
-                <use xlink:href=""></use>
-              </svg>
-              Экологически чистые&nbsp;материалы
-            </li>
-            <li class="about__item about__item--style">
-              <svg class="about__item-icon about__item-icon--style" width="47" height="27">
-                <use xlink:href=""></use>
-              </svg>Скандинавский&nbsp;стиль по&nbsp;российской цене
-            </li>
-            <li class="about__item about__item--like">
-              <svg class="about__item-icon about__item-icon--like" width="34" height="27">
-              <use xlink:href=""></use>
-            </svg>
-              Увеличивает&nbsp;лайки на&nbsp;фотографиях
-            </li>
-            <li class="about__item about__item--handmade">
-              <svg class="about__item-icon about__item-icon--handmade" width="35" height="34">
-                <use xlink:href=""></use>
-              </svg>
-              Связано вручную&nbsp;с любовью&nbsp;и&nbsp;умилением
-            </li>
-            <li class="about__item about__item--manufacturer">
-              <svg class="about__item-icon about__item-icon--rocket" width="55" height="23">
-                <use xlink:href=""></use>
-              </svg>
-              Поддержка&nbsp;отечественного производителя
-            </li>
-            <li class="about__item about__item--gift-wrap">
-              <svg class="about__item-icon about__item-icon--gift" width="33" height="32">
-                <use xlink:href=""></use>
-              </svg>
-              Поставляется&nbsp;в подарочной&nbsp;упаковке
-            </li>
+            <li class="about__item about__item--eko">Экологически чистые&nbsp;материалы</li>
+            <li class="about__item about__item--style">Скандинавский&nbsp;стиль по&nbsp;российской цене</li>
+            <li class="about__item about__item--like">Увеличивает&nbsp;лайки на&nbsp;фотографиях</li>
+            <li class="about__item about__item--handmade">Связано вручную&nbsp;с любовью&nbsp;и&nbsp;умилением</li>
+            <li class="about__item about__item--manufacturer">Поддержка&nbsp;отечественного производителя</li>
+            <li class="about__item about__item--gift">Поставляется&nbsp;в подарочной&nbsp;упаковке</li>
           </ul>
         </div>
       </section>
 
-      <section class="reviews zigzag-line">
+      <section class="reviews">
         <div class="reviews__container slider">
           <h2 class="reviews__title section-title">Отзывы</h2>
           <div class="rewiews__list slider__list">
@@ -175,7 +141,7 @@
               </cite>
             </blockquote>
             <blockquote class="rewiews__item rewiews__item-2 slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="rewiews__author">
                 <b class="rewiews__author-name">Анастасия Красильникова</b>
                 <span class="rewiews__hashtag">@misssssiskras</span>
@@ -191,7 +157,7 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__container">
+        <div class="contacts__container zigzag-line">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__data">
             <p class="contacts__row">
@@ -200,7 +166,7 @@
             </p>
             <p class="contacts__row">
               <span class="contacts__text">адрес:</span>
-              <span class="contacts__adress">г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8, офис 101</span><!---->
+              <span class="contacts__adress">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</span>
             </p>
           </div>
         </div>
@@ -283,6 +249,5 @@
         </form>
       </section>
       <script src="js/script.js"></script>
-      <script src="js/picturefill.js"></script>
-  </body>
+    </body>
 </html>

@@ -2,8 +2,18 @@
   @include simple-list;
 }
 
-.goods-list__item {
+.goods-list__link {
   @include container;
+  position: relative;
+  display: block;
+  padding-top: 26px;
+  padding-bottom: 28px;
+  min-height: 103px;
+  font-size: 19px;
+  line-height: 1.26;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
 
   &:hover {
     transition: 0.5s;
@@ -17,21 +27,36 @@
   &--toys {
     background-color: $mint--darker;
   }
-}
 
-.goods-list__link {
-  display: block;
-  padding-top: 25px;
-  padding-bottom: 28px;
-  min-height: 103px;
-  font-size: 19px;
-  line-height: 1.26;
-  font-weight: 700;
-  color: $white;
-  text-decoration: none;
-
-  &:active .goods-list__text {
+  &:active .goods-list__text,
+  &:active &::after {
     opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &--interior::after {
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+  }
+
+  &--toys::after {
+    top: 22px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
   }
 }
 
@@ -70,12 +95,19 @@
 
   .goods-list__item {
     width: 50%;
-    padding: 0 35px;
   }
 
   .goods-list__link {
-    padding-top: 27px;
-    padding-bottom: 31px;
+    padding: 27px 35px 32px;
+
+    &--interior::after {
+      top: 29px;
+    }
+
+    &--toys::after {
+      top: 32px;
+      right: 34px;
+    }
   }
 
   .goods-list__text {
@@ -93,8 +125,7 @@
   }
 
   .goods-list__link {
-    box-sizing: border-box;
-    padding: 30px 0;
+    padding: 30px 36px;
   }
 
   .goods-list__text {

@@ -5,9 +5,9 @@
 
 .reviews__title {
   @include no-indent;
-  margin-bottom: 25px;/*---*/
-  font-size: 25px;/*---*/
-  line-height: 1.2;/*---*/
+  margin-bottom: 25px;
+  font-size: 25px;
+  line-height: 1.2;
   color: $black;
 }
 
@@ -18,9 +18,9 @@
 .reviews__text {
   @include no-indent;
   display: block;
-  margin-bottom: 24px;/*---*/
+  margin-bottom: 24px;
 }
-/*---*/
+
 .rewiews__author-name {
   font-size: 17px;
   line-height: 1.4;
@@ -32,7 +32,7 @@
 .rewiews__hashtag {
   display: block;
   /*---*/
-  margin-bottom: 30px;/*---*/
+  margin-bottom: 30px;
   font-size: 17px;
   line-height: 1.8;
   font-style: normal;
@@ -41,18 +41,18 @@
 .rewiews__controls {
   box-sizing: border-box;
   display: flex;
-  margin-bottom: 36px;/*---*/
+  margin-bottom: 37px;
   width: 100%;
   height: 52px;
   border: $border;
 }
 
-.rewiews__control-button {/*---*/
+.rewiews__control-button {
   padding: 0;
   width: 50%;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left 37px top 11px;
   border: none;
   cursor: pointer;
 
@@ -85,15 +85,14 @@
     flex-wrap: wrap;
     align-items: flex-start;
     margin: 0;
-    padding-top: 78px;
-    padding-bottom: 115px;
+    padding-top: 79px;
+    padding-bottom: 80px;
     background-image: url("../img/review@1x.jpg");
-    background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 350px 458px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
       background-size: 350px 458px;
     }
   }
@@ -128,8 +127,15 @@
     border: none;
   }
 
-  .reviews__control-button--next {
-    border-left: none;
+  .rewiews__control-button {
+    &--prev {
+      background-position: left 12px top 13px;
+    }
+
+    &--next {
+      border-left: none;
+      background-position: right 19px top 13px;
+    }
   }
 }
 
@@ -142,7 +148,9 @@
     width: 100%;
     margin: 0;
     padding-top: 71px;
+    padding-bottom: 150px;
     padding-left: 175px;
+    padding-right: 0;
   }
 
   .reviews__title {
@@ -152,11 +160,15 @@
   }
 
   .rewiews__item {
-    margin-top: 50px;
+    margin-top: 44px;
   }
 
   .reviews__text {
-    margin-bottom: 36px;
+    margin-bottom: 38px;
     max-width: 775px;
+  }
+
+  .reviews__button {
+    margin-top: 8px;
   }
 }
