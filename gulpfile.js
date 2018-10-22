@@ -17,7 +17,7 @@ var include = require("posthtml-include");
 var server = require("browser-sync").create();
 
 gulp.task("clean", function () {
- return del("build");
+  return del("build");
 });
 
 gulp.task("css", function () {
@@ -65,7 +65,7 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img/"));/*пока тест*/
- });
+});
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
@@ -99,8 +99,8 @@ gulp.task("server", function () {
 });
 
 gulp.task("refresh", function (done) {
- server.reload();
- done();
+  server.reload();
+  done();
 });
 
 gulp.task("build", gulp.series(

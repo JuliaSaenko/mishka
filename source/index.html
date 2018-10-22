@@ -33,7 +33,7 @@
             <li class="main-nav__item main-nav__item--search">
               <a class="main-nav__link">
                 <svg class="main-nav__search-icon" width="18" height="19">
-                  <use xlink:href=""></use>
+                  <use xlink:href="img/srite.svg#sprite-icon-search"></use>
                 </svg>
                 Поиск по сайту
               </a>
@@ -41,7 +41,7 @@
             <li class="main-nav__item main-nav__item--cart">
               <a class="main-nav__link" href="#">
                 <svg class="main-nav__cart-icon" width="21" height="18">
-                  <use xlink:href=""></use>
+                  <use xlink:href="img/srite.svg#sprite-icon-cart"></use>
                 </svg>
                 Корзина: пока пуста
               </a>
@@ -99,7 +99,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-              <!-- <source type="image/webp" srcset="triple-set-mobile@1x.webp 1x, triple-set-mobile@2x.webp 2x"> -->
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели - вязаные корзинки">
@@ -107,7 +107,7 @@
           </div>
           <footer class="weekly-goods__price-info">
             <p class="weekly-goods__price">Цена: 990 руб.</p>
-            <a class="weekly-goods__button button" href="#">Заказать</a>
+            <a class="weekly-goods__button button modal-open" href="#">Заказать</a>
           </footer>
         </div>
       </article>
@@ -176,12 +176,14 @@
         </div>
         <div class="contacts__map">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALQO0GGyKJfySHsTgPr33OIdCC6hSjYJY&q=большая+Конюшенная,19" allowfullscreen></iframe>
-          <!-- <source type="image/webp" media="(min-width: 1250px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <!-- picture>
+          <source type="image/webp" media="(min-width: 1250px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt=""> -->
+          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="">
+        </picture>-->
         </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
@@ -191,7 +193,7 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
           <svg class="page-footer__icon" width="102" height="34">
-            <use xlink:href=""></use>
+            <use xlink:href="img/srite.svg#sprite-logo-footer"></use>
           </svg>
         </a>
         <ul class="page-footer__social social-buttons">
@@ -199,7 +201,7 @@
             <a class="social-buttons__link social-buttons__link--instagram" href="#">
               <span class="visually-hidden">Подписывайтесь на наш Инстаграм</span>
               <svg class="social-buttonsr__icon" width="22" height="21">
-                <use xlink:href=""></use>
+                <use xlink:href="img/srite.svg#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -207,7 +209,7 @@
             <a class="social-buttons__link social-buttons__link--facebook" href="#">
               <span class="visually-hidden">Следите за новостями магазина в Фейсбук</span>
               <svg class="social-buttons__icon" width="15" height="28">
-                <use xlink:href=""></use>
+                <use xlink:href="img/srite.svg#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -215,7 +217,7 @@
             <a class="social-buttons__link social-buttons__link--twitter" href="#">
               <span class="visually-hidden">Читайте нас в Твиттере</span>
               <svg class="social-buttons__icon" width="23" height="20">
-                <use xlink:href=""></use>
+                <use xlink:href="img/srite.svg#sprite-icon-twiiter"></use>
               </svg>
             </a>
           </li>
@@ -224,7 +226,7 @@
           <span class="copyright__by">Разработано</span>
           <a class="copyright__cite" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__logo" width="27" height="34">
-              <use xlink:href=""></use>
+              <use xlink:href="img/srite.svg#sprite-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -252,7 +254,8 @@
           <button class="choose-size__button button button--mint" type="submit">Добавить</button>
         </form>
       </section>
-      <script src="js/script.js"></script>
+      <script src="js/mainnav-open.js"></script>
+      <script src="js/modal-open.js"></script>
       <script src="js/svg4everybody.js"></script>
     </body>
 </html>
