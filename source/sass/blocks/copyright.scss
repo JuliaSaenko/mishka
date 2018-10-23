@@ -23,7 +23,15 @@
 
 .copyright__logo {
   fill: $mint;
-  outline: 1px solid red;
+
+  &:hover,
+  &:focus {
+    fill: $icon-fill;
+  }
+
+  &:active {
+    fill: rgba($icon-fill, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

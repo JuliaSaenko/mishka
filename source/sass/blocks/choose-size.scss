@@ -1,21 +1,21 @@
 .choose-size__list {
   @include simple-list;
-  @include container;
   display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
 }
 
 .choose-size__item {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
-.choose-size__label-radio {
+.choose-size__item:not(:nth-child(3n)) {
+  margin-right: 7px;
+}
+
+.choose-size__label {
   display: block;
-  width: 78px;
-  height: 48px;
+  padding: 10px 15px;
+  width: 82px;
   text-align: center;
-  vertical-align: middle;
   border: 2px solid $gray--lighter;
 
   &:hover,
@@ -25,5 +25,16 @@
 
   &:active {
     border: 2px solid $modborder-color--active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .choose-size__list {
+    width: 350px;
+  }
+
+  .choose-size__label {
+    padding: 10px 25px;
+    width: 112px;
   }
 }

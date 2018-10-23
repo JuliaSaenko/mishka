@@ -21,7 +21,16 @@
 }
 
 .social-buttons__icon {
-  outline: 1px solid red;
+  fill: $brown;
+
+  &:hover,
+  &:focus {
+    fill: $icon-fill;
+  }
+
+  &:active {
+    fill: rgba($icon-fill, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

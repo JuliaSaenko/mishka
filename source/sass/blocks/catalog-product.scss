@@ -64,18 +64,16 @@
 
 .catalog-product__cart-icon {
   position: absolute;
-  outline: 1px solid red;
   top: 0;
   left: -20px;
-  opacity: 0.2;
+  fill: rgba($mint, 0.2);
 
   &:hover {
-    opacity: 1;
     fill: $mint;
   }
 
   &:active {
-    opacity: 0.3;
+    fill: rgba($mint, 0.3);
   }
 }
 
