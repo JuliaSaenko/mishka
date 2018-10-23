@@ -20,78 +20,48 @@
 }
 
 .about__item {
-  position: relative;
   padding-top: 60px;
   padding-bottom: 23px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
   color: $black;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-  }
+  background-repeat: no-repeat;
 
   &--eko {
-    &::before {
-      top: 8px;
-      left: 8px;
-      width: 32px;
-      height: 37px;
-      background-image: url("../img/icon-feature-flower.svg");
-    }
+    background-image: url("../img/icon-feature-flower.svg");
+    background-position: top 8px left 8px;
+    background-size: 32px 37px;
   }
 
   &--style {
-    &::before {
-      top: 8px;
-      left: 0;
-      width: 47px;
-      height: 27px;
-      background-image: url("../img/icon-feature-money.svg");
-    }
+    background-image: url("../img/icon-feature-money.svg");
+    background-position: top 8px left 0;
+    background-size: 47px 27px;
   }
 
   &--like {
-    &::before {
-      top: 13px;
-      left: 7px;
-      width: 34px;
-      height: 30px;
-      background-image: url("../img/icon-feature-heart.svg");
-    }
+    background-image: url("../img/icon-feature-heart.svg");
+    background-position: top 13px left 7px;
+    background-size: 34px 30px;
   }
 
   &--handmade {
-    &::before {
-      top: 11px;
-      left: 3px;
-      width: 34px;
-      height: 35px;
-      background-image: url("../img/icon-feature-ball.svg");
-    }
+    background-image: url("../img/icon-feature-ball.svg");
+    background-position: top 11px left 3px;
+    background-size: 34px 35px;
   }
 
   &--manufacturer {
-    &::before {
-      top: 11px;
-      left: -5px;
-      width: 55px;
-      height: 23px;
-      background-image: url("../img/icon-feature-rocket.svg");
-    }
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-position: top 11px left -5px;
+    background-size: 55px 23px;
   }
 
   &--gift {
-    &::before {
-      top: 10px;
-      left: 3px;
-      width: 33px;
-      height: 32px;
-      background-image: url("../img/icon-feature-gift.svg");
-    }
+    background-image: url("../img/icon-feature-gift.svg");
+    background-position: top 10px left 3px;
+    background-size: 33px 32px;
   }
 }
 
@@ -127,55 +97,32 @@
 
     &--eko {
       order: 1;
-
-      &::before {
-        top: 23px;
-        left: 8px;
-      }
+      background-position: top 23px left 8px;
     }
 
     &--style {
       order: 3;
-
-      &::before {
-        top: 24px;
-      }
+      background-position: top 24px left 0;
     }
 
     &--like {
       order: 5;
-
-      &::before {
-        top: 28px;
-        left: 7px;
-      }
+      background-position: top 28px left 7px;
     }
 
     &--handmade {
       order: 2;
-
-      &::before {
-        top: 26px;
-        left: 3px;
-      }
+      background-position: top 24px left 3px;
     }
 
     &--manufacturer {
       order: 4;
-
-      &::before {
-        top: 26px;
-        left: -5px;
-      }
+      background-position: top 26px left -5px;
     }
 
     &--gift {
       order: 6;
-
-      &::before {
-        top: 25px;
-        left: 3px;
-      }
+      background-position: top 25px left 3px;
     }
   }
 }
