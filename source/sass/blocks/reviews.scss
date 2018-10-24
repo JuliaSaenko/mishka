@@ -74,10 +74,6 @@
   }
 }
 
-.rewiews__item-2 {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .reviews__container {
     @include tablet-container;

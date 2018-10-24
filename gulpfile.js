@@ -15,6 +15,8 @@ var cheerio = require("gulp-cheerio");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
+var uglify = require("gulp-uglify");
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("clean", function () {
   return del("build");
@@ -54,6 +56,7 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 
@@ -73,9 +76,19 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("source/img/"));/*пока тест*/
 });
 
+gulp.task("uglify", function() {
+  return gulp.src("source/js/**/*.{js}")
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**"
   ], {

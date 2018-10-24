@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет магазин Mishka</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
   </head>
@@ -53,7 +55,7 @@
       </div>
       <div class="page-header__intro page-header__intro--image">
         <p class="page-header__text page-header__text">Бесплатная доставка по России</p>
-        <h1 class="page-header__title page-header__title">Милые&nbsp;штуки ручной работы&nbsp;для дома</h1>
+        <h1 class="page-header__title">Милые&nbsp;штуки ручной работы&nbsp;для дома</h1>
       </div>
     </header>
 
@@ -107,14 +109,14 @@
           </div>
           <footer class="weekly-goods__price-info">
             <p class="weekly-goods__price">Цена: 990 руб.</p>
-            <a class="weekly-goods__button button modal-open" href="#">Заказать</a>
+            <a class="weekly-goods__button button js-modal" href="#">Заказать</a>
           </footer>
         </div>
       </article>
 
       <section class="about">
         <div class="about__container zigzag-line">
-          <h2 class="about-title section-title">Коротко о нас:</h2>
+          <h2 class="about-title">Коротко о нас:</h2>
           <ul class="about__list">
             <li class="about__item about__item--eko">Экологически чистые&nbsp;материалы</li>
             <li class="about__item about__item--style">Скандинавский&nbsp;стиль по&nbsp;российской цене</li>
@@ -127,34 +129,20 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__container slider">
-          <h2 class="reviews__title section-title">Отзывы</h2>
-          <div class="rewiews__list slider__list">
-            <blockquote class="rewiews__item slider__item">
+        <div class="reviews__container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="rewiews__list">
+            <blockquote class="rewiews__item">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="rewiews__author">
-                <b class="rewiews__author-name">Анастасия Красильникова</b>
-                <span class="rewiews__hashtag">@misssssiskras</span>
-              </cite>
-            </blockquote>
-            <blockquote class="rewiews__item rewiews__item-2 slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="rewiews__author">
-                <b class="rewiews__author-name">Анастасия Красильникова</b>
-                <span class="rewiews__hashtag">@misssssiskras</span>
-              </cite>
-            </blockquote>
-            <blockquote class="rewiews__item rewiews__item-2 slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="rewiews__author">
                 <b class="rewiews__author-name">Анастасия Красильникова</b>
                 <span class="rewiews__hashtag">@misssssiskras</span>
               </cite>
             </blockquote>
           </div>
-          <div class="rewiews__controls slider__controls">
-            <button class="rewiews__control-button rewiews__control-button--prev slider__button slider__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
-            <button class="rewiews__control-button rewiews__control-button--next slider__button slider__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+          <div class="rewiews__controls">
+            <button class="rewiews__control-button rewiews__control-button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="rewiews__control-button rewiews__control-button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </div>
           <a class="reviews__button button" href="#">Написать</a>
         </div>
@@ -176,14 +164,14 @@
         </div>
         <div class="contacts__map">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALQO0GGyKJfySHsTgPr33OIdCC6hSjYJY&q=большая+Конюшенная,19" allowfullscreen></iframe>
-          <!-- picture>
-          <source type="image/webp" media="(min-width: 1250px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="">
-        </picture>-->
+          <picture>
+            <source type="image/webp" media="(min-width: 1250px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта проезда">
+        </picture>
         </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
@@ -192,6 +180,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
+          <span class="visually-hidden">Интернет-магазин Мишка</span>
           <svg class="page-footer__icon" width="102" height="34">
             <use xlink:href="img/srite.svg#sprite-logo-footer"></use>
           </svg>
@@ -239,16 +228,16 @@
         <form class="modal__form choose-size">
           <ul class="choose-size__list">
             <li class="choose-size__item">
-              <label class="choose-size__label-radio" for="s-size">S</label>
+              <label class="choose-size__label" for="s-size">S</label>
               <input class="choose-size__input-radio visually-hidden" type="radio" name="size" value="size-S" id="s-size">
             </li>
             <li class="choose-size__item">
-              <label class="choose-size__label-radio" for="m-size">M</label>
-              <input class="choose-size__input-radio visually-hidden" type="radio" name="size" value="size-M" id="m-size">
+              <label class="choose-size__label" for="m-size">M</label>
+              <input class="choose-size__input visually-hidden" type="radio" name="size" value="size-M" id="m-size">
             </li>
             <li class="choose-size__item">
-              <label class="choose-size__label-radio" for="l-size">L</label>
-              <input class="choose-size__input-radio visually-hidden" type="radio" name="size" value="size-L" id="l-size">
+              <label class="choose-size__label" for="l-size">L</label>
+              <input class="choose-size__input visually-hidden" type="radio" name="size" value="size-L" id="l-size">
             </li>
           </ul>
           <button class="choose-size__button button button--mint" type="submit">Добавить</button>
@@ -256,6 +245,6 @@
       </section>
       <script src="js/mainnav-open.js"></script>
       <script src="js/modal-open.js"></script>
-      <script src="js/svg4everybody.js"></script>
+      <script src="js/svg4everybody.min.js"></script>
     </body>
 </html>

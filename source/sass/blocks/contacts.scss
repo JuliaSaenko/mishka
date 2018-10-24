@@ -49,6 +49,7 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 100%;
   min-height: 457px;
 }
@@ -62,12 +63,12 @@
   z-index: 10;
 }
 
-/*.contacts__map-image {
+.contacts__map-image {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-}*/
+  z-index: -1;
+}
 
 .contacts__button {
   display: block;
@@ -119,6 +120,10 @@
     line-height: 1.8;
   }
 
+  .contacts__adress {
+    width: 225px;
+  }
+
   .contacts__text {
     padding-right: 25px;
   }
@@ -148,7 +153,7 @@
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 48px;
     padding-right: 50%;
     padding-left: 175px;
   }

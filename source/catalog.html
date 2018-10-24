@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет магазин Mishka</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
   </head>
@@ -59,6 +61,7 @@
 
     <main class="page-main">
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog__list catalog-list">
           <li class="catalog-list__item">
             <article class="catalog-list__product catalog-product">
@@ -70,6 +73,7 @@
                   <source media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                   <img class="catalog-product__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+                </picture>
               </a>
               <div class="catalog-product__info">
                 <header class="catalog-product__header">
@@ -78,7 +82,7 @@
                 </header>
                 <footer class="catalog-product__footer">
                   <span class="catalog-product__price">1 200 руб.</span>
-                  <a class="catalog-product__buy modal-open">
+                  <a class="catalog-product__buy js-modal">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="catalog-product__cart-icon" width="20" height="19">
                       <use xlink:href="img/srite.svg#sprite-icon-cart"></use>
@@ -107,7 +111,7 @@
                 </header>
                 <footer class="catalog-product__footer">
                   <span class="catalog-product__price">690 руб.</span>
-                  <a class="catalog-product__buy modal-open">
+                  <a class="catalog-product__buy js-modal">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="catalog-product__cart-icon" width="20" height="19">
                       <use xlink:href="img/srite.svg#sprite-icon-cart"></use>
@@ -131,12 +135,12 @@
               </a>
               <div class="catalog-product__info catalog-product__info--test">
                 <header class="catalog-product__header">
-                  <h3 class="catalog-product__title"><a class="catalog-product__link" href="#">Большая&nbsp;корзинка для&nbsp;игрушек</a></h3>
+                  <h3 class="catalog-product__title"><a class="catalog-product__link" href="#">Большая&nbsp;корзинка<br>для&nbsp;игрушек</a></h3>
                   <p class="catalog-product__description">Диаметр 30 см, высота 30 см</p>
                 </header>
                 <footer class="catalog-product__footer">
                   <span class="catalog-product__price">1 500 руб.</span>
-                  <a class="catalog-product__buy modal-open">
+                  <a class="catalog-product__buy js-modal">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="catalog-product__cart-icon" width="20" height="19">
                       <use xlink:href="img/srite.svg#sprite-icon-cart"></use>
@@ -161,11 +165,11 @@
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <img class="production-process__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео производства товаров">
             </picture>
-            <button class="production-process__play-button" type="button">
+            <button class="production-process__play-button" type="button"><span class="visually-hidden">Смотреть видео</span></button>
           </div>
           <div class="production-process__info">
             <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="production-process__button button button--small modal-open" href="#">Сделать заказ</a>
+            <a class="production-process__button button button--small js-modal" href="#">Сделать заказ</a>
           </div>
         </div>
       </section>
@@ -174,6 +178,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
+          <span class="visually-hidden">Интернет-магазин Мишка</span>
           <svg class="page-footer__icon" width="102" height="34">
             <use xlink:href="img/srite.svg#sprite-logo-footer"></use>
           </svg>
@@ -215,29 +220,29 @@
       </div>
     </footer>
 
-    <section class="modal modal--add-to-cart">
+    <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберете размер:</p>
-      <form class="modal__form choose-size">
-        <ul class="choose-size__list">
-          <li class="choose-size__item">
-            <label class="choose-size__label-radio" for="s-size">S</label>
-            <input class="choose-size__label-radio visually-hidden" type="radio" name="size" value="size-S" id="s-size">
-          </li>
-          <li class="choose-size__item">
-            <label class="choose-size__label-radio" for="m-size">M</label>
-            <input class="choose-size__label-radio visually-hidden" type="radio" name="size" value="size-M" id="m-size">
-          </li>
-          <li class="choose-size__item">
-            <label class="choose-size__label-radio" for="l-size">L</label>
-            <input class="choose-size__label-radio visually-hidden" type="radio" name="size" value="size-L" id="l-size">
-          </li>
-        </ul>
-        <button class="choose-size__button button button--mint" type="submit">Добавить</button>
-      </form>
-    </section>
-    <script src="js/mainnav-open.js"></script>
-    <script src="js/modal-open.js"></script>
-    <script src="js/svg4everybody.js"></script>
+        <form class="modal__form choose-size">
+          <ul class="choose-size__list">
+            <li class="choose-size__item">
+              <label class="choose-size__label" for="s-size">S</label>
+              <input class="choose-size__input-radio visually-hidden" type="radio" name="size" value="size-S" id="s-size">
+            </li>
+            <li class="choose-size__item">
+              <label class="choose-size__label" for="m-size">M</label>
+              <input class="choose-size__input visually-hidden" type="radio" name="size" value="size-M" id="m-size">
+            </li>
+            <li class="choose-size__item">
+              <label class="choose-size__label" for="l-size">L</label>
+              <input class="choose-size__input visually-hidden" type="radio" name="size" value="size-L" id="l-size">
+            </li>
+          </ul>
+          <button class="choose-size__button button button--mint" type="submit">Добавить</button>
+        </form>
+      </section>
+      <script src="js/mainnav-open.js"></script>
+      <script src="js/modal-open.js"></script>
+      <script src="js/svg4everybody.min.js"></script>
   </body>
 </html>

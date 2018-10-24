@@ -6,8 +6,6 @@
 
 .main-nav__list {
   @include simple-list;
-  /*position: absolute;*/
-  /*display: none;*/
 }
 
 .main-nav__item {
@@ -73,16 +71,14 @@
   position: absolute;
   top: 5px;
   left: -42px;
-  outline: 1px solid red;
-  opacity: 0.2;
+  fill: rgba($black, 0.2);
 
   &:hover {
-    opacity: 1;
     fill: $mint;
   }
 
   &:active {
-    opacity: 0.3;
+    fill: rgba($mint, 0.3);
   }
 }
 
@@ -100,7 +96,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    fill: rgba($mint, 0.3);
   }
 }
 
@@ -200,7 +196,7 @@
 
     &--catalog {
       order: 2;
-      margin-right: 35px;
+      margin-right: 38px;
       padding: 0;
       padding-top: 18px;
       font-size: 15px;

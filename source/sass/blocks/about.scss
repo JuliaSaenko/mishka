@@ -73,7 +73,7 @@
 
   .about__container {
     @include tablet-container;
-    padding-top: 67px;
+    padding-top: 69px;
   }
 
   .about__list {
@@ -91,6 +91,7 @@
   .about__item {
     padding-top: 76px;
     padding-bottom: 35px;
+    padding-right: 20px;
     width: 50%;
     font-size: 20px;
     line-height: 1.1;
