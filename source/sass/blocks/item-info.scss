@@ -10,6 +10,7 @@
 .item-info__options {
   margin-bottom: 26px;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .item-info__row {
@@ -41,7 +42,8 @@
 
   .item-info__label,
   .item-info__value {
-    padding-bottom: 13px;
+    padding-top: 7px;
+    padding-bottom: 6px;
   }
 
   .item-info__value {
@@ -53,7 +55,8 @@
   .item-info__label,
   .item-info__value {
     padding: 0;
-    padding-bottom: 17px;
+    padding-top: 9px;
+    padding-bottom: 8px;
   }
 
   .item-info__value {

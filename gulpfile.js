@@ -15,7 +15,7 @@ var cheerio = require("gulp-cheerio");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
-var uglify = require("gulp-uglify");
+var js = require("gulp-uglify");
 var htmlmin = require('gulp-htmlmin');
 
 gulp.task("clean", function () {
@@ -67,17 +67,19 @@ gulp.task("images", function () {
       imagemin.jpegtran({ progressive: true }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img/"));/*пока тест*/
+    .pipe(gulp.dest("build/img/"));
 });
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp ( {quality: 90}))
-    .pipe(gulp.dest("source/img/"));/*пока тест*/
+    .pipe(gulp.dest("build/img/"));
 });
 
-gulp.task("uglify", function() {
+gulp.task("js", function() {
   return gulp.src("source/js/**/*.{js}")
+    .pipe(plumber())
+    .pipe(gulp.dest("build/js"))
     .pipe(uglify())
     .pipe(rename({
       suffix: ".min"
@@ -88,9 +90,7 @@ gulp.task("uglify", function() {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**"
+    "source/fonts/**/*.{woff,woff2}"
   ], {
     base: "source"
   })
@@ -121,6 +121,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html"
+  "html",
+  "images",
+  "webp"
 ));
 gulp.task("start", gulp.series("build", "server"));
