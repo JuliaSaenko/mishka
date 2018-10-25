@@ -20,7 +20,7 @@
 }
 
 .catalog-product__header {
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   border-bottom: $catalog-itemborder;
 }
 
@@ -28,7 +28,7 @@
   @include no-indent;
   margin-bottom: 7px;
   font-size: 17px;
-  line-height: 1.4;
+  line-height: 1.41;
   font-weight: 700;
 }
 
@@ -47,7 +47,7 @@
 .catalog-product__footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 19px;
+  padding-top: 20px;
 }
 
 .catalog-product__price {
@@ -66,7 +66,7 @@
   position: absolute;
   top: 0;
   left: -20px;
-  fill: rgba($mint, 0.2);
+  fill: rgba($black, 0.2);
 
   &:hover {
     fill: $mint;
@@ -132,6 +132,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
     border: $catalog-itemborder;
   }
 

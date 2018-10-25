@@ -66,22 +66,6 @@
   max-width: 50%;
 }
 
-/*.goods-list__int-icon {
-  /*position: absolute;
-  top: 0;
-  left: 0;
-  outline: 1px solid red;
-  fill: rgba(#44c0aa 0.5);
-
-  &:hover {
-    fill: rgba(#44c0aa 0.7);
-  }
-
-  &:active {
-    fill: rgba(#44c0aa 0.3);
-  }
-}*/
-
 @media (min-width: $tablet-width) {
   .goods {
     width: 100%;
@@ -125,7 +109,7 @@
   }
 
   .goods-list__link {
-    padding: 30px 36px;
+    padding: 28px 36px 32px;
   }
 
   .goods-list__text {

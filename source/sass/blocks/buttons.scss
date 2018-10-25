@@ -36,7 +36,8 @@
 
     &--mint:hover,
     &--mint:focus {
-      border: $gray--darker;
+      background-color: $gray--darker;
+      border-color: $gray--darker;
     }
   }
 }

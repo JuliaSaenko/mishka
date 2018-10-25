@@ -82,7 +82,7 @@
     align-items: flex-start;
     margin: 0;
     padding-top: 79px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 458px;
@@ -114,6 +114,11 @@
     max-width: 643px;
     font-size: 17px;
     line-height: 1.76;
+  }
+
+  .rewiews__author-name {
+    font-size: 18px;
+    line-height: 1.33;
   }
 
   .rewiews__controls {

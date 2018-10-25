@@ -54,8 +54,8 @@
 
   &--manufacturer {
     background-image: url("../img/icon-feature-rocket.svg");
-    background-position: top 11px left -5px;
-    background-size: 55px 23px;
+    background-position: top 11px left 15px;
+    background-size: 64px 23px;
   }
 
   &--gift {
@@ -68,12 +68,12 @@
 @media (min-width: $tablet-width) {
   .about {
     padding-top: 0;
-    padding-bottom: 29px;
+    padding-bottom: 28px;
   }
 
   .about__container {
     @include tablet-container;
-    padding-top: 69px;
+    padding-top: 67px;
   }
 
   .about__list {
@@ -84,6 +84,7 @@
   }
 
   .about-title {
+    margin-bottom: 28px;
     font-size: 43px;
     line-height: 1.16;
   }
@@ -118,7 +119,7 @@
 
     &--manufacturer {
       order: 4;
-      background-position: top 26px left -5px;
+      background-position: top 26px left -10px;
     }
 
     &--gift {
@@ -146,6 +147,7 @@
   }
 
   .about-title {
+    margin-bottom: 25px;
     margin-left: 175px;
     font-size: 53px;
     line-height: 1.1;

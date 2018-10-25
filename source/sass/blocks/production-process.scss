@@ -85,7 +85,6 @@
   @include no-indent;
   display: block;
   margin-bottom: 24px;
-  padding-right: 40px;
   font-size: 13px;
   line-height: 1.85;
 }
@@ -159,12 +158,12 @@
 @media (min-width: $desktop-width) {
   .production-process {
     @include desktop-container;
-    margin-bottom: 100px;
+    margin-bottom: 104px;
   }
 
   .production-process__container {
     padding: 0;
-    min-height: 456px;
+    min-height: 454px;
   }
 
   .production-process__title {
@@ -193,7 +192,7 @@
   .production-process__video {
     display: block;
     width: 682px;
-    height: 455px;
+    height: 452px;
   }
 
   .production-process__info {
