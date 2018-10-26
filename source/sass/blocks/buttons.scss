@@ -4,7 +4,7 @@
   padding: 15px 39px 18px;
   width: 100%;
   font-size: 17px;
-  line-height: 0.94;
+  line-height: 16px;
   font-weight: 700;
   color: $gray--darker;
   text-transform: uppercase;
@@ -36,12 +36,13 @@
 
     &--mint:hover,
     &--mint:focus {
-      border: $gray--darker;
+      background-color: $gray--darker;
+      border-color: $gray--darker;
     }
   }
 }
 
 
 @media (min-width: $tablet-width) {
-  line-height: 1.18;
+  line-height: 20px;
 }

@@ -10,7 +10,7 @@
 
 .main-nav__item {
   @include container;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 26px;
   padding-left: 75px;
   min-height: 79px;
@@ -69,8 +69,8 @@
 
 .main-nav__search-icon {
   position: absolute;
-  top: 5px;
-  left: -42px;
+  top: 3px;
+  left: -44px;
   fill: rgba($black, 0.2);
 
   &:hover {
@@ -84,14 +84,12 @@
 
 .main-nav__cart-icon {
   position: absolute;
-  top: 5px;
-  left: -45px;
-  outline: 1px solid red;
+  top: 3px;
+  left: -47px;
   opacity: 0.2;
 
   &:hover {
     opacity: 1;
-
     fill: $mint;
   }
 
@@ -178,7 +176,7 @@
     padding: 0;
     padding-top: 33px;
     min-height: 88px;
-    line-height: 1.4;
+    line-height: 24px;
     border-bottom: none;
 
     &--search {
@@ -189,6 +187,7 @@
     }
 
     &--cart {
+      padding-top: 31px;
       padding-left: 82px;
       padding-right: 0;
       text-align: right;
@@ -196,11 +195,11 @@
 
     &--catalog {
       order: 2;
-      margin-right: 38px;
+      margin-right: 36px;
       padding: 0;
       padding-top: 18px;
       font-size: 15px;
-      line-height: 1.6;
+      line-height: 24px;
     }
 
     &--form {
@@ -209,7 +208,7 @@
       padding: 0;
       padding-top: 18px;
       font-size: 15px;
-      line-height: 1.6;
+      line-height: 24px;
     }
 
     &--logo {
@@ -253,7 +252,7 @@
     padding-top: 32px;
     width: auto;
     font-size: 17px;
-    line-height: 1.4;
+    line-height: 24px;
 
     &--sale,
     &--new {
@@ -261,7 +260,7 @@
       margin-right: 60px;
       padding-top: 19px;
       font-size: 15px;
-      line-height: 1.6;
+      line-height: 24px;
     }
 
     &--catalog,
@@ -290,7 +289,7 @@
 
     &--logo {
       margin-right: 103px;
-      margin-left: 74px;
+      margin-left: 75px;
       padding: 0;
       width: 149px;
       height: 72px;
@@ -301,7 +300,7 @@
   .main-nav__link--logo {
     margin-right: 0;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 8px;
     width: auto;
   }
 

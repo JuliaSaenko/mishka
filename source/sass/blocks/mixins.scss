@@ -16,18 +16,11 @@
 
 @mixin desktop-container {
   margin: 0 auto;
-  padding: 0 100px;
-  width: 1250px;
+  padding: 0 50px;
+  width: 1150px;
 }
 
 @mixin no-indent {
   margin: 0;
   padding: 0;
 }
-
-/*@mixin font-set($font-base, $lineh-base, $fontw-base, $black) {
-  font-size: $font-base;
-  line-height: $lineh-base;
-  font-weight: $fontw-base;
-  color: $black;
-}*/

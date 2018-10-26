@@ -11,7 +11,7 @@
   display: block;
   padding-left: 9px;
   font-size: 19px;
-  line-height: 0.95;
+  line-height: 18px;
   font-weight: 700;
   color: $black;
 }
@@ -47,11 +47,11 @@
   }
 
   .copyright__by {
-    padding-bottom: 14px;
+    padding-bottom: 9px;
   }
 
   .copyright__cite {
-    margin: 0;
+    margin-top: 5px;
     margin-left: 27px;
   }
 }

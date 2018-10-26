@@ -11,7 +11,7 @@
 .weekly-goods__title {
   @include no-indent;
   font-size: 25px;
-  line-height: 1.2;
+  line-height: 30px;
   font-weight: 700;
   color: $black;
 }
@@ -19,7 +19,7 @@
 .weekly-goods__label {
   @include no-indent;
   font-size: 17px;
-  line-height: 1.18;
+  line-height: 20px;
   font-weight: 700;
   color: $mint;
   text-transform: uppercase;
@@ -31,9 +31,9 @@
 
 .weekly-goods__price {
   @include no-indent;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 17px;
-  line-height: 1.4;
+  line-height: 24px;
   font-weight: 700;
   color: $gray--darker;
   text-align: center;
@@ -55,7 +55,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 46px;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
   }
 
   .weekly-goods__header {
@@ -67,7 +67,7 @@
 
   .weekly-goods__title {
     font-size: 43px;
-    line-height: 1.16;
+    line-height: 50px;
   }
 
   .weekly-goods__label {
@@ -75,7 +75,7 @@
     padding-top: 12px;
     max-width: 80px;
     font-size: 17px;
-    line-height: 1;
+    line-height: 17px;
     text-align: center;
   }
 
@@ -86,7 +86,7 @@
   }
 
   .weekly-goods__price-info {
-    margin-top: -137px;
+    margin-top: -134px;
     padding-top: 15px;
     width: 292px;
   }
@@ -95,11 +95,11 @@
     margin-bottom: 35px;
     padding: 0;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 
   .weekly-goods__image {
-    padding-top: 8px;
+    padding-top: 7px;
   }
 
   .weekly-goods__button {
@@ -137,15 +137,15 @@
   }
 
   .weekly-goods__info {
-    margin-bottom: 76px;
+    margin-bottom: 85px;
     margin-right: 56px;
     padding-left: 175px;
   }
 
   .weekly-goods__image {
     position: absolute;
-    top: 60px;
-    right: 100px;
+    top: 64px;
+    right: 50px;
   }
 
   .weekly-goods__price-info {

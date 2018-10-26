@@ -22,8 +22,7 @@
 .page-header__title {
   @include container;
   @include no-indent;
-  padding-top: 49px;
-  padding-bottom: 58px;
+  padding: 49px 30px 58px;
   font-size: 27px;
   line-height: 1.11;
   font-weight: 700;
@@ -72,6 +71,7 @@
     @include no-indent;
     display: block;
     margin: 0 auto;
+    padding-left: 350px;
     max-width: 668px;
     line-height: 1.6;
     text-align: right;

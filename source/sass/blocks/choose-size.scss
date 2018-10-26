@@ -4,7 +4,7 @@
 }
 
 .choose-size__item {
-  margin-bottom: 29px;
+  margin-bottom: 32px;
 }
 
 .choose-size__item:not(:nth-child(3n)) {
@@ -12,19 +12,35 @@
 }
 
 .choose-size__label {
+  position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 17px 15px;
   width: 82px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
   text-align: center;
   border: 2px solid $gray--lighter;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 2px solid $modborder-color;
   }
 
+  &:focus,
   &:active {
     border: 2px solid $modborder-color--active;
+  }
+}
+
+.choose-size__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  opacity: 0;
+
+  &:checked + .choose-size__label {
+    border-color: $modborder-color--active;
   }
 }
 
@@ -34,7 +50,7 @@
   }
 
   .choose-size__label {
-    padding: 10px 25px;
+    padding: 16px 23px;
     width: 112px;
   }
 }

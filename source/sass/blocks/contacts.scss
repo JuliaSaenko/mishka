@@ -9,7 +9,7 @@
   display: block;
   margin-bottom: 26px;
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 30px;
   font-weight: 700;
   color: $black;
 }
@@ -72,7 +72,7 @@
 
 .contacts__button {
   display: block;
-  margin: 40px auto;
+  margin: 40px auto 37px;
   width: 260px;
 }
 
@@ -80,6 +80,7 @@
   .contacts {
     position: relative;
     padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .contacts__container {
@@ -91,7 +92,7 @@
   .contacts__title {
     margin-bottom: 49px;
     font-size: 43px;
-    line-height: 1.16;
+    line-height: 50px;
 
     &::before {
       content: url("../img/icon-flag.svg");
@@ -117,7 +118,7 @@
   .contacts__link,
   .contacts__adress {
     font-size: 17px;
-    line-height: 1.8;
+    line-height: 30px;
   }
 
   .contacts__adress {
@@ -129,7 +130,7 @@
   }
 
   .contacts__button {
-    margin: 55px auto;
+    margin: 55px auto 25px;
     width: 231px;
   }
 }
@@ -138,8 +139,8 @@
   .contacts {
     position: relative;
     margin: 0 auto;
-    margin-bottom: 103px;
-    width: 1250px;
+    margin-bottom: 70px;
+    width: 1150px;
   }
 
   .contacts__container {
@@ -153,25 +154,26 @@
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
     padding-right: 50%;
     padding-left: 175px;
   }
 
   .contacts__row {
-    width: 290px;
+    width: 298px;
+    margin-bottom: 27px;
   }
 
   .contacts__title {
     padding-left: 170px;
-    padding-top: 69px;
+    padding-top: 65px;
     padding-right: 50%;
     font-size: 53px;
-    line-height: 1.08;
+    line-height: 57px;
 
     &::before {
-      top: 134px;
-      left: 164px;
+      top: 130px;
+      left: 114px;
     }
   }
 
@@ -182,14 +184,14 @@
 
   .contacts__map {
     position: absolute;
-    top: 75px;
-    right: 100px;
+    top: 70px;
+    right: 50px;
     width: 525px;
     height: 457px;
   }
 
   .contacts__button {
     margin: 0;
-    margin-left: 275px;
+    margin-left: 225px;
   }
 }

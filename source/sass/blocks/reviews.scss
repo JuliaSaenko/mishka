@@ -7,7 +7,7 @@
   @include no-indent;
   margin-bottom: 25px;
   font-size: 25px;
-  line-height: 1.2;
+  line-height: 30px;
   color: $black;
 }
 
@@ -23,7 +23,7 @@
 
 .rewiews__author-name {
   font-size: 17px;
-  line-height: 1.4;
+  line-height: 24px;
   font-weight: 700;
   font-style: normal;
   color: $black;
@@ -31,10 +31,9 @@
 
 .rewiews__hashtag {
   display: block;
-  /*---*/
   margin-bottom: 30px;
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 30px;
   font-style: normal;
 }
 
@@ -82,7 +81,7 @@
     align-items: flex-start;
     margin: 0;
     padding-top: 79px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 458px;
@@ -98,7 +97,7 @@
     margin-bottom: 50px;
     order: -2;
     font-size: 43px;
-    line-height: 1.16;
+    line-height: 50px;
   }
 
   .reviews__button {
@@ -106,14 +105,19 @@
     margin-left: auto;
     padding: 15px 0;
     width: 175px;
-    line-height: 1.18;
+    line-height: 20px;
   }
 
   .reviews__text {
-    margin-bottom: 58px;
+    margin-bottom: 53px;
     max-width: 643px;
     font-size: 17px;
-    line-height: 1.76;
+    line-height: 30px;
+  }
+
+  .rewiews__author-name {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .rewiews__controls {
@@ -152,7 +156,7 @@
   .reviews__title {
     margin: 0;
     font-size: 53px;
-    line-height: 1.1;
+    line-height: 57px;
   }
 
   .rewiews__item {

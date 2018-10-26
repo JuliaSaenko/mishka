@@ -4,14 +4,14 @@
 
 .about__container {
   @include container;
-  padding-top: 33px;
+  padding-top: 31px;
 }
 
 .about-title {
   @include no-indent;
   margin-bottom: 25px;
   font-size: 25px;
-  line-height: 1.2;
+  line-height: 30px;
   color: $black;
 }
 
@@ -23,7 +23,7 @@
   padding-top: 60px;
   padding-bottom: 23px;
   font-size: 17px;
-  line-height: 1.2;
+  line-height: 20px;
   font-weight: 700;
   color: $black;
   background-repeat: no-repeat;
@@ -54,8 +54,8 @@
 
   &--manufacturer {
     background-image: url("../img/icon-feature-rocket.svg");
-    background-position: top 11px left -5px;
-    background-size: 55px 23px;
+    background-position: top 11px left -9px;
+    background-size: 64px 23px;
   }
 
   &--gift {
@@ -68,12 +68,12 @@
 @media (min-width: $tablet-width) {
   .about {
     padding-top: 0;
-    padding-bottom: 29px;
+    padding-bottom: 26px;
   }
 
   .about__container {
     @include tablet-container;
-    padding-top: 69px;
+    padding-top: 67px;
   }
 
   .about__list {
@@ -84,8 +84,9 @@
   }
 
   .about-title {
+    margin-bottom: 28px;
     font-size: 43px;
-    line-height: 1.16;
+    line-height: 50px;
   }
 
   .about__item {
@@ -94,7 +95,7 @@
     padding-right: 20px;
     width: 50%;
     font-size: 20px;
-    line-height: 1.1;
+    line-height: 22px;
 
     &--eko {
       order: 1;
@@ -118,7 +119,7 @@
 
     &--manufacturer {
       order: 4;
-      background-position: top 26px left -5px;
+      background-position: top 26px left -10px;
     }
 
     &--gift {
@@ -146,8 +147,9 @@
   }
 
   .about-title {
+    margin-bottom: 25px;
     margin-left: 175px;
     font-size: 53px;
-    line-height: 1.1;
+    line-height: 57px;
   }
 }
