@@ -12,10 +12,6 @@
   </head>
 
   <body>
-    <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
-
     <header class="page-header">
       <div class="page-header__top">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -74,6 +70,7 @@
           </li>
         </ul>
       </div>
+
       <article class="weekly-goods">
         <div class="weekly-goods__container">
           <header class="weekly-goods__header">
@@ -171,7 +168,7 @@
             <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта проезда">
-        </picture>
+          </picture>
         </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
@@ -225,30 +222,30 @@
     <section class="modal">
       <div class="modal__overlay"></div>
       <div class="modal__content">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберете размер:</p>
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберете размер:</p>
         <form class="modal__form choose-size" method="post" action="https://echo.htmlacademy.ru">
           <ul class="choose-size__list">
             <li class="choose-size__item">
-              <label class="choose-size__label" for="s-size">S</label>
               <input class="choose-size__input" type="radio" name="size" value="size-S" id="s-size">
+              <label class="choose-size__label" for="s-size">S</label>
             </li>
             <li class="choose-size__item">
-              <label class="choose-size__label" for="m-size">M</label>
               <input class="choose-size__input" type="radio" name="size" value="size-M" id="m-size">
+              <label class="choose-size__label" for="m-size">M</label>
             </li>
             <li class="choose-size__item">
-              <label class="choose-size__label" for="l-size">L</label>
               <input class="choose-size__input" type="radio" name="size" value="size-L" id="l-size">
+              <label class="choose-size__label" for="l-size">L</label>
             </li>
           </ul>
           <button class="choose-size__button button button--mint" type="submit" >Добавить</button>
         </form>
       </div>
-      </section>
-      <script src="js/mainnav-open.min.js"></script>
-      <script src="js/modal-open.min.js"></script>
-      <script src="js/svg4everybody.min.js"></script>
-      <script>svg4everybody();</script>
-    </body>
+    </section>
+    <script src="js/mainnav-open.min.js"></script>
+    <script src="js/modal-open.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+  </body>
 </html>
