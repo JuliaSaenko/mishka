@@ -192,6 +192,7 @@
   padding: 15px 45px 17px 0;
   font-size: 17px;
   width: 260px;
+  height: 51px;
   line-height: 18px;
   color: rgba($gray--darker, 0.3);
   border: none;
@@ -441,6 +442,7 @@
   .order-form__text {
     display: flex;
     width: 100%;
+    height: 42px;
     padding-top: 0;
     padding-bottom: 14px;
     padding-left: 16px;
@@ -453,6 +455,7 @@
   .order-form__email {
     display: flex;
     width: 100%;
+    height: 42px;
     padding-top: 0;
     padding-bottom: 13px;
     padding-left: 15px;
@@ -475,6 +478,7 @@
 
   .order-form__textarea {
     width: 501px;
+    height: 142px;
     font-size: 19px;
     line-height: 18px;
   }

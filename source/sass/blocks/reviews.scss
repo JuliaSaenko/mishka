@@ -38,10 +38,10 @@
 }
 
 .rewiews__controls {
-  box-sizing: border-box;
   display: flex;
+  margin: 0 auto;
   margin-bottom: 37px;
-  width: 100%;
+  width: 260px;
   height: 52px;
   border: $border;
 }
@@ -79,7 +79,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 79px;
     padding-bottom: 78px;
     background-image: url("../img/review@1x.jpg");
@@ -121,6 +121,7 @@
   }
 
   .rewiews__controls {
+    margin: 0;
     margin-left: auto;
     margin-top: -85px;
     width: 168px;
