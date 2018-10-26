@@ -10,7 +10,7 @@
   padding-bottom: 28px;
   min-height: 103px;
   font-size: 19px;
-  line-height: 1.26;
+  line-height: 24px;
   font-weight: 700;
   color: $white;
   text-decoration: none;
@@ -99,7 +99,7 @@
     display: block;
     max-width: 50%;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 30px;
   }
 }
 
@@ -110,10 +110,5 @@
 
   .goods-list__link {
     padding: 28px 36px 32px;
-  }
-
-  .goods-list__text {
-    font-size: 20px;
-    line-height: 1.5;
   }
 }

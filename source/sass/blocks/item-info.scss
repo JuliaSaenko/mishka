@@ -2,13 +2,13 @@
   @include no-indent;
   margin-bottom: 12px;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 24px;
   font-weight: 400;
   color: $gray--darker;
 }
 
 .item-info__options {
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   width: 100%;
   border-collapse: collapse;
 }
@@ -32,13 +32,13 @@
 @media (min-width: $tablet-width) {
   .item-info__options {
     width: 290px;
-    line-height: 1.33;
+    line-height: 20px;
   }
 
   .item-info__text {
     margin-bottom: 42px;
     font-size: 17px;
-    line-height: 1.76;
+    line-height: 30px;
   }
 
   .item-info__label,
@@ -56,8 +56,8 @@
   .item-info__label,
   .item-info__value {
     padding: 0;
-    padding-top: 9px;
-    padding-bottom: 12px;
+    padding-top: 7px;
+    padding-bottom: 10px;
   }
 
   .item-info__text {

@@ -65,7 +65,7 @@
   margin-bottom: 26px;
   padding-left: 89px;
   font-size: 17px;
-  line-height: 1.4;
+  line-height: 24px;
   font-weight: 700;
   color: $black;
 
@@ -86,7 +86,7 @@
   display: block;
   margin-bottom: 24px;
   font-size: 13px;
-  line-height: 1.85;
+  line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -113,7 +113,7 @@
     padding-right: 65px;
     padding-bottom: 32px;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
 
     &::before {
       top: -4px;
@@ -127,12 +127,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 
   .production-process__video {
     width: 668px;
-    height: 455px;
+    height: 454px;
   }
 
   .production-process__play-button {
@@ -145,9 +145,9 @@
 
   .production-process__description {
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     font-size: 15px;
-    line-height: 2;
+    line-height: 30px;
   }
 
   .production-process__button {
@@ -174,7 +174,7 @@
     padding-top: 55px;
     width: 150px;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
 
     &::before {
       top: 0;

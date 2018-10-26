@@ -5,20 +5,23 @@
 
 .order-form__fieldset {
   @include no-indent;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   border: none;
 
   &--color {
-    margin-bottom: 11px;
+    margin-bottom: 9px;
   }
 
-  &--name,
+  &--name {
+    margin-bottom: 16px;
+  }
+
   &--tel {
-    margin-bottom: 18px;
+    margin-bottom: 32px;
   }
 
   &--email {
-    margin-bottom: 17px;
+    margin-bottom: 30px;
   }
 
   &--text {
@@ -29,9 +32,9 @@
 .order-form__title {
   @include no-indent;
   display: flex;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   font-size: 17px;
-  line-height: 0.94;
+  line-height: 16px;
   font-weight: 700;
   color: $mint;
   text-transform: uppercase;
@@ -47,7 +50,7 @@
   }
 
   &--text {
-    padding-bottom: 8px;
+    padding-bottom: 20px;
   }
 
   &--tel,
@@ -76,6 +79,7 @@
 
   &--tel,
   &--email {
+    @include no-indent;
     position: relative;
     margin-top: 0;
   }
@@ -116,7 +120,7 @@
   padding-top: 10px;
   padding-left: 62px;
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 18px;
   font-weight: 700;
   color: $black;
 
@@ -166,7 +170,7 @@
   display: block;
   padding-top: 8px;
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 18px;
   font-weight: 700;
   color: $black;
 }
@@ -176,12 +180,19 @@
 }
 
 .order-form__text,
+.order-form__email {
+  padding: 15px 45px 17px 0;
+  font-size: 17px;
+}
+
+.order-form__text,
 .order-form__tel,
 .order-form__email {
-  padding: 15px 45px 15px 0;
-  width: 260px;
+  display: block;
+  padding: 15px 45px 17px 0;
   font-size: 17px;
-  line-height: 1.06;
+  width: 260px;
+  line-height: 18px;
   color: rgba($gray--darker, 0.3);
   border: none;
   border-bottom: $form-border;
@@ -206,8 +217,8 @@
 }
 
 .order-form__tel {
-  padding-top: 12px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   font-size: 19px;
 }
 
@@ -228,10 +239,10 @@
 
 .order-form__textarea {
   box-sizing: border-box;
-  padding: 16px;
+  padding: 15px;
   width: 100%;
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 18px;
   color: rgba($gray--darker, 0.3);
   vertical-align: top;
   border: 2px solid $gray--darker;
@@ -256,7 +267,7 @@
 .order-form__explanation {
   display: block;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   color: $gray--darker;
 }
 
@@ -268,7 +279,7 @@
   .order-form__fieldset {
     margin: 0;
     padding-top: 68px;
-    padding-bottom: 23px;
+    padding-bottom: 19px;
     width: auto;
 
     &--tel,
@@ -298,7 +309,7 @@
     }
 
     &--text {
-      margin-bottom: 53px;
+      margin-bottom: 56px;
       padding: 0;
       padding-top: 50px;
     }
@@ -316,12 +327,13 @@
 
   .order-form__title {
     display: block;
-    padding-top: 10px;
+    padding-top: 5px;
     width: 167px;
     text-align: left;
 
+    &--color,
     &--text {
-      padding: 0;
+      padding-top: 10px;
     }
 
     &--tel,
@@ -345,7 +357,7 @@
   .order-form__option {
     display: flex;
     align-items: center;
-    margin-bottom: 44px;
+    margin-bottom: 50px;
     width: 100%;
 
     &--text {
@@ -372,7 +384,7 @@
   .order-form__label-text {
     padding-left: 80px;
     font-size: 19px;
-    line-height: 1;
+    line-height: 19px;
   }
 
   .order-form__label-checkbox {
@@ -396,8 +408,10 @@
   }
 
   .order-form__label-radio {
+    padding-top: 5px;
+
     &::before {
-      top: -7px;
+      top: -10px;
       left: 0;
       width: 52px;
       height: 53px;
@@ -406,7 +420,7 @@
 
   .order-form__radio {
     &:checked + .order-form__label-radio::after {
-      top: 8px;
+      top: 5px;
       left: 15px;
       width: 22px;
       height: 22px;
@@ -421,7 +435,7 @@
     padding: 0;
     padding-bottom: 15px;
     font-size: 19px;
-    line-height: 0.95;
+    line-height: 18px;
   }
 
   .order-form__text {
@@ -431,7 +445,7 @@
     padding-bottom: 14px;
     padding-left: 16px;
     font-size: 19px;
-    line-height: 0.95;
+    line-height: 18px;
     background-color: transparent;
   }
 
@@ -443,7 +457,7 @@
     padding-bottom: 13px;
     padding-left: 15px;
     font-size: 19px;
-    line-height: 0.95;
+    line-height: 18px;
     background-color: transparent;
   }
 
@@ -462,7 +476,7 @@
   .order-form__textarea {
     width: 501px;
     font-size: 19px;
-    line-height: 0.95;
+    line-height: 18px;
   }
 
   .order-form__footer {
@@ -480,33 +494,38 @@
     height: 50px;
     padding: 12px 25px;
     font-size: 17px;
-    line-height: 0.94;
+    line-height: 16px;
   }
 
   .order-form__explanation {
-    padding-top: 6px;
+    padding-top: 8px;
     font-size: 17px;
-    line-height: 1.76;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order-form {
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
 
   .order-form__fieldset {
     &--type {
       padding-top: 65px;
-      padding-bottom: 23px;
+      padding-bottom: 19px;
     }
 
     &--color {
-      padding-bottom: 23px;
+      padding-bottom: 22px;
     }
 
     &--text {
-      margin-bottom: 48px;
+      margin-bottom: 0;
+      padding-bottom: 50px;
+    }
+
+    &--email {
+      padding-bottom: 26px;
     }
   }
 
@@ -583,8 +602,8 @@
 
   .order-form__label-radio {
     &::before {
-      top: -7px;
-      left: 7px;
+      top: -9px;
+      left: 8px;
       width: 52px;
       height: 53px;
     }
@@ -592,8 +611,8 @@
 
   .order-form__radio {
     &:checked + .order-form__label-radio::after {
-      top: 8px;
-      left: 22px;
+      top: 6px;
+      left: 23px;
       width: 22px;
       height: 22px;
       background-color: $mint;

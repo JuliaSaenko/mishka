@@ -9,7 +9,7 @@
   display: block;
   margin-bottom: 26px;
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 30px;
   font-weight: 700;
   color: $black;
 }
@@ -72,7 +72,7 @@
 
 .contacts__button {
   display: block;
-  margin: 40px auto;
+  margin: 40px auto 37px;
   width: 260px;
 }
 
@@ -80,7 +80,7 @@
   .contacts {
     position: relative;
     padding-top: 0;
-    padding-bottom: 33px;
+    padding-bottom: 30px;
   }
 
   .contacts__container {
@@ -92,7 +92,7 @@
   .contacts__title {
     margin-bottom: 49px;
     font-size: 43px;
-    line-height: 1.16;
+    line-height: 50px;
 
     &::before {
       content: url("../img/icon-flag.svg");
@@ -118,7 +118,7 @@
   .contacts__link,
   .contacts__adress {
     font-size: 17px;
-    line-height: 1.8;
+    line-height: 30px;
   }
 
   .contacts__adress {
@@ -166,13 +166,13 @@
 
   .contacts__title {
     padding-left: 170px;
-    padding-top: 67px;
+    padding-top: 65px;
     padding-right: 50%;
     font-size: 53px;
-    line-height: 1.08;
+    line-height: 57px;
 
     &::before {
-      top: 134px;
+      top: 130px;
       left: 114px;
     }
   }
@@ -184,7 +184,7 @@
 
   .contacts__map {
     position: absolute;
-    top: 75px;
+    top: 70px;
     right: 50px;
     width: 525px;
     height: 457px;
