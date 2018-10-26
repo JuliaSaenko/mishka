@@ -1,5 +1,7 @@
 .main-nav {
   position: relative;
+  margin: 0 auto;
+  width: 320px;
   background-color: transparent;
   z-index: 1;
 }
@@ -166,15 +168,10 @@
     z-index: 0;
   }
 
-  .main-nav__link--logo {
-    margin-left: 0;
-    padding: 22px 0;
-    width: 112px;
-  }
-
   .main-nav__item {
     padding: 0;
     padding-top: 33px;
+    width: auto;
     min-height: 88px;
     line-height: 24px;
     border-bottom: none;
@@ -217,6 +214,12 @@
       height: 48px;
       border-bottom: none;
     }
+  }
+
+  .main-nav__link--logo {
+    margin-left: 0;
+    padding: 22px 0;
+    width: 112px;
   }
 
   .main-nav__toggle {
