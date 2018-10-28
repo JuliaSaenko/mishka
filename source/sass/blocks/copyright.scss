@@ -1,15 +1,32 @@
 .copyright {
   @include container;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 260px;
+}
+
+.copyright__cite {
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  padding-top: 8px;
-  width: 260px;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .copyright__logo {
+    fill: $icon-fill;
+  }
+
+  &:active .copyright__logo {
+    fill: rgba($icon-fill, 0.3);
+  }
 }
 
 .copyright__by {
   @include no-indent;
   display: block;
+  margin-right: 28px;
   padding-left: 9px;
   font-size: 19px;
   line-height: 18px;
@@ -17,22 +34,9 @@
   color: $black;
 }
 
-.copyright__cite {
-  margin-top: 13px;
-  margin-left: 28px;
-}
 
 .copyright__logo {
   fill: $mint;
-
-  &:hover,
-  &:focus {
-    fill: $icon-fill;
-  }
-
-  &:active {
-    fill: rgba($icon-fill, 0.3);
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -40,6 +44,7 @@
     width: 182px;
     margin: 0;
     padding: 0;
+    padding-top: 13px;
   }
 
   .copyright__by,
@@ -49,10 +54,5 @@
 
   .copyright__by {
     padding-bottom: 9px;
-  }
-
-  .copyright__cite {
-    margin-top: 5px;
-    margin-left: 27px;
   }
 }
