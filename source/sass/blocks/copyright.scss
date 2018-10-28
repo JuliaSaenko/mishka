@@ -10,16 +10,12 @@
   align-items: center;
   text-decoration: none;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &:hover .copyright__logo {
     fill: $icon-fill;
   }
 
-  &:active .copyright__logo {
-    fill: rgba($icon-fill, 0.3);
+  &:active {
+    opacity: 0.3;
   }
 }
 
